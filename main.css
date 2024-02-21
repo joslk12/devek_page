@@ -1,0 +1,281 @@
+.body {
+    font-family: Arial;
+}
+
+.has-text-primary {
+    color: #00a041 !important;
+}
+
+.has-background-primary {
+    background-color: #00a041 !important;
+}
+
+.has-text-red {
+    color: #af1919 !important;
+}
+
+.has-background-red {
+    background-color: #af1919 !important;
+}
+
+.has-text-blue {
+    color: #004080 !important;
+}
+
+.has-background-blue {
+    background-color: #004080 !important;
+}
+
+.has-text-dark {
+    color: #292a2d !important;
+}
+
+.has-text-gray {
+    color: #f5f5f7 !important;;
+}
+
+.has-background-gray {
+    background-color: #f5f5f7 !important;;
+}
+
+.has-text-line {
+    color: #a9a9a9 !important;;
+}
+
+.navbar-item:hover {
+    background-color: transparent !important;
+    border-bottom: 2px solid white !important;
+    color: white !important;;
+}
+
+#mainBanner .flickity-page-dots {
+    bottom: 10px !important;
+}
+  /* white circles */
+#mainBanner .flickity-page-dots .dot {
+   width: 12px;
+   height: 12px;
+   opacity: 1;
+   background: white !important;
+   border: none;
+}
+  /* fill-in selected dot */
+#mainBanner .flickity-page-dots .dot.is-selected {
+  background: #00a041 !important;
+}
+
+/* no circle */
+#mainBanner .flickity-button {
+    background: transparent;
+  }
+  /* big previous & next buttons */
+#mainBanner .flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+  }
+  /* icon color */
+#mainBanner .flickity-button-icon {
+    display: none;
+  }
+  /* hide disabled button */
+#mainBanner .flickity-button:disabled {
+    display: none;
+  }
+
+#empaqueProduct .flickity-page-dots {
+    top: -35px;
+    padding-left: 90%;
+    z-index: 1;
+}
+/* white circles */
+#empaqueProduct .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: #a9a9a9;
+}
+  /* fill-in selected dot */
+#empaqueProduct .flickity-page-dots .dot.is-selected {
+  background: #00a041;
+}
+
+#empaqueProduct .flickity-slider {
+    z-index: 10;
+}
+
+#empaqueProduct .carousel-cell {
+    width: 20%;
+    margin-right: 10px;
+  }
+
+#empaqueProduct .flickity-prev-next-button.next {
+    z-index: 50;
+}
+
+#empaqueProduct .flickity-prev-next-button.previous {
+    z-index: 50;
+}
+
+#equipoCar .flickity-page-dots {
+    top: -35px;
+    padding-left: 90%;
+    z-index: 1;
+}
+/* white circles */
+#equipoCar .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: #a9a9a9;
+}
+  /* fill-in selected dot */
+#equipoCar .flickity-page-dots .dot.is-selected {
+  background: #00a041;
+}
+
+#equipoCar .flickity-slider {
+    z-index: 10;
+}
+
+#equipoCar .carousel-cell {
+    width: 20%;
+    margin-right: 10px;
+  }
+
+#equipoCar .flickity-prev-next-button.next {
+    z-index: 50;
+}
+
+#equipoCar .flickity-prev-next-button.previous {
+    z-index: 50;
+}
+
+#tendencia .flickity-page-dots {
+    top: -35px;
+    padding-left: 90%;
+    z-index: 1;
+}
+/* white circles */
+#tendencia .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: #a9a9a9;
+}
+  /* fill-in selected dot */
+#tendencia .flickity-page-dots .dot.is-selected {
+  background: #00a041;
+}
+
+#tendencia .flickity-slider {
+    z-index: 10;
+}
+
+#tendencia .carousel-cell {
+    width: 20%;
+    margin-right: 10px;
+  }
+
+#tendencia .flickity-prev-next-button.next {
+    z-index: 50;
+}
+
+#tendencia .flickity-prev-next-button.previous {
+    z-index: 50;
+}
+
+
+#embalaje .flickity-page-dots {
+    display: none;;
+}
+
+#embalaje .flickity-slider {
+    z-index: 10;
+}
+
+#embalaje .carousel-cell {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+#embalaje .flickity-prev-next-button.next {
+    z-index: 50;
+}
+
+#embalaje .flickity-prev-next-button.previous {
+    z-index: 50;
+}
+
+#embalaje .flickity-button:disabled {
+    display: none;
+}
+
+#catalogo .flickity-page-dots {
+    display: none;;
+}
+
+#catalogo .carousel-cell {
+    width: 100%;
+  }
+
+#catalogo .flickity-prev-next-button {
+    background: transparent;
+}
+  
+#catalogo .flickity-prev-next-button:hover {
+    background: transparent;
+}
+  /* arrow color */
+#catalogo .flickity-prev-next-button .arrow {
+    fill: white;
+}
+#catalogo .flickity-prev-next-button.no-svg {
+    color: white;
+}
+  /* position outside */
+#catalogo .flickity-prev-next-button.previous {
+    left: -40px;
+}
+#catalogo .flickity-prev-next-button.next {
+    right: -40px;
+}
+
+#catalogo .flickity-button:disabled {
+    display: none;
+}
+
+.input  {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #a9a9a9;
+    border-radius: 0px;
+    box-shadow: none !important;
+    background-color: transparent;
+    font-weight: 600;
+    font-style: italic;
+    color: #292a2d;
+ }
+ .input::placeholder {
+    color: #292a2d;
+ }
+
+.select  {
+    width: 100%;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-color: none !important;
+    border-bottom: 1px solid #a9a9a9;
+    box-shadow: none !important;
+    border-radius: 0px;
+ }
+
+.select select {
+    border: none !important;
+    background: transparent !important;
+    width: 100%;
+    font-weight: 600;
+    font-style: italic;
+    color: #292a2d;
+ }

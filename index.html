@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./assets/flickity.css">
+    <title>Devek</title>
+</head>
+<body>
+    <!-- Top -->
+    <div class="container">
+        <div class="level is-mobile pt-4 pb-4">
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold">
+                        Grupo Mexicano Imperial
+                    </p>
+                </div>
+            </div>
+            <div class="level-right">
+                <div class="level-item">
+                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                        <i class="fa-solid fa-phone"></i> <a class="has-text-dark" href="tel:+525541654165">(55) 4165-4165</a>
+                    </p>
+                </div>
+                <div class="level-item">
+                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                        <i class="fa-solid fa-envelope"></i> <a class="has-text-dark" href="mailto:ventas@devek.com.mx">ventas@devek.com.mx</a>
+                    </p>
+                </div>
+                <div class="level-item">
+                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                        <i class="fa-solid fa-check"></i> Cotizaciones
+                    </p>
+                </div>
+                <div class="level-item">
+                    <div class="is-size-5 has-text-white has-text-weight-bold has-background-primary" style="border-radius: 50%; width: 3rem; height: 3rem;">
+                        <i class="fa-brands fa-linkedin-in" style="padding-top: 30%; padding-left: 33%;"></i>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div class="is-size-5 has-text-white has-text-weight-bold has-background-primary" style="border-radius: 50%; width: 3rem; height: 3rem;">
+                        <i class="fa-brands fa-youtube" style="padding-top: 31%; padding-left: 27%;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <section class="has-background-primary">
+        <div class="container has-background-primary">
+            <nav class="navbar has-background-primary " role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="./assets/Logos/Devek_logo-principal.png" alt="Devek_logo-principal.png" style="max-width: 200px; height: auto; max-height: fit-content;">
+                        </a>
+                    
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1.1rem;">
+                          <a class="navbar-item has-text-white">
+                            Suministros de Empaque
+                          </a>
+                    
+                          <a class="navbar-item has-text-white">
+                            Equipos y Accesorios de Empaque
+                          </a>
+
+                          <a class="navbar-item has-text-white">
+                            Nuestros clientes
+                          </a>
+                          
+                          <a class="navbar-item has-text-white">
+                            Servicio Técnico
+                          </a>
+
+                          <div class="navbar-item">
+                            <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1.1rem;">
+                                Contáctanos
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+            </nav>
+        </div>  
+    </section>
+
+    <!-- Banner -->
+    <div id="mainBanner" class="carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell">
+            <figure class="image">
+                <img src="./assets/Imagenes/ejemplo_banner.png" alt="ejemplo_banner.png">
+            </figure>
+        </div>
+        <div class="carousel-cell">
+            <figure class="image">
+                <img src="./assets/Imagenes/ejemplo_banner.png" alt="ejemplo_banner.png">
+            </figure>
+        </div>
+        <div class="carousel-cell">
+            <figure class="image">
+                <img src="./assets/Imagenes/ejemplo_banner.png" alt="ejemplo_banner.png">
+            </figure>
+        </div>
+        <div class="carousel-cell">
+            <figure class="image">
+                <img src="./assets/Imagenes/ejemplo_banner.png" alt="ejemplo_banner.png">
+            </figure>
+        </div>
+        <div class="carousel-cell">
+            <figure class="image">
+                <img src="./assets/Imagenes/ejemplo_banner.png" alt="ejemplo_banner.png">
+            </figure>
+        </div>
+    </div>
+
+    <!-- Marcas -->
+    <section class="has-background-gray">
+        <div class="container" style="background: transparent;">
+            <div class="section">
+                <p class="has-text-dark is-italic is-size-5 has-text-centered">Nuestras Marcas</p>
+                <p class="has-text-primary is-italic has-text-weight-bold is-size-1 has-text-centered">BIENVENIDOS A DEVEK®</p>
+                <p class="has-text-dark is-italic has-text-weight-bold is-size-3 has-text-centered">Más de 35 años dedicados a proteger lo que te importa.</p>
+                <div class="columns">
+                    <div class="column" style="margin: auto;">
+                        <figure class="image p-4">
+                            <img src="./assets/Logos/Logo_Devek.png" alt="Logo_Devek.png">
+                        </figure>
+                    </div>
+                    <div class="column" style="margin: auto;">
+                        <figure class="image p-4">
+                            <img src="./assets/Logos/Logo_Devekmatic.png" alt="Logo_Devekmatic.png">
+                        </figure>
+                    </div>
+                    <div class="column" style="margin: auto;">
+                        <figure class="image p-4">
+                            <img src="./assets/Logos/Logo_Brillaflex.png" alt="Logo_Brillaflex.png">
+                        </figure>
+                    </div>
+                    <div class="column" style="margin: auto;">
+                        <figure class="image p-4">
+                            <img src="./assets/Logos/Logo_Brillaflex-Bio.png" alt="Logo_Brillaflex-Bio.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUMINISTROS DE EMPAQUE -->
+    <section class="section" style="background-color: transparent;">
+        <p class="has-text-dark has-text-weight-bold is-size-5 is-italic pb-4" style="border-bottom: 1px solid #a9a9a9;">SUMINISTROS DE EMPAQUE >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+        <div id="empaqueProduct" class="carousel" data-flickity='{ "contain": true, "groupCells": true }'>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/1.Cintas-Adhesiva-Transparente_Devek.png" alt="1.Cintas-Adhesiva-Transparente_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cintas Adhesiva Transparente</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/2.Cintas-Adhesiva-Canela_Devek.png" alt="2.Cintas-Adhesiva-Canela_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cintas Adhesiva Canela</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/3.Masking-Tape-_Devek.png" alt="3.Masking-Tape-_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Masking Tape</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/4.Cintas-Adhesiva-Ambar_Devek.png" alt="4.Cintas-Adhesiva-Ambar_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cintas Adhesiva Ambar</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/5.Poliolefina-Brillaflex_Devek.png" alt="5.Poliolefina-Brillaflex_Devek.png">
+                    </figure>
+                    <div class="block">   
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Poliolefina Brillaflex</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/6.Torre-de-6-piezas-Ambar_Devek.png" alt="6.Torre-de-6-piezas-Ambar_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Torre de 6 piezas Ambar</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/7.Cinta-Devekmark_Devek.png" alt="7.Cinta-Devekmark_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cinta Devekmark</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/8.Pelicula-Strech_Devek.png" alt="8.Pelicula-Strech_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Pelicula Strech</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/9.Doble-Capa-Polipropileno_Devek.png" alt="9.Doble-Capa-Polipropileno_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Doble Capa Polipropileno</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/10.Cinta-Ducto_Devek.png" alt="10.Cinta-Ducto_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cinta Ducto</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipos -->
+    <section class="section" style="background-color: transparent;">
+        <p class="has-text-dark has-text-weight-bold is-size-5 is-italic pb-4 pt-6" style="border-bottom: 1px solid #a9a9a9; border-top: 1px solid #a9a9a9;">EQUIPOS Y ACCESORIOS DE EMPAQUE >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+        <div id="equipoCar" class="carousel" data-flickity='{ "contain": true, "groupCells": true }'>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/1.Precintadora-Monoformato-BL220A_Devek.png" alt="1.Precintadora-Monoformato-BL220A_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Precintadora Monoformato BL220A</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/2.Túnel-de-Encogimiento-YT4525_Devek.png" alt="2.Túnel-de-Encogimiento-YT4525_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Túnel de Encogimiento YT4525</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/3.Selladora-Automática-SF6451-S_Devek.png" alt="3.Selladora-Automática-SF6451-S_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Selladora Automática SF6451</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/4.Selladora-Semiautomática-YSL5045_Devek.png" alt="4.Selladora-Semiautomática-YSL5045_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Selladora Semiautomática YSL5045</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/5.Envolvedora-2000_Devek.png" alt="5.Envolvedora-2000_Devek.png">
+                    </figure>
+                    <div class="block">   
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Envolvedora 2000</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/6.Precintadora-Monoformato-DT420A_Devek.png" alt="6.Precintadora-Monoformato-DT420A_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Precintadora Monoformato DT420A</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/7.Banda-Transportadora-Flexible-Extendible-50F1545_Devek.png" alt="7.Banda-Transportadora-Flexible-Extendible-50F1545_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Banda Transportadora Flexible Extendible 50F1545</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/8.Túnel-de-Encogimiento-YT6040_Devek.png" alt="8.Túnel-de-Encogimiento-YT6040_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Túnel de Encogimiento YT6040</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/9.Selladora-de-Cortina-YC6030_Devek.png" alt="9.Selladora-de-Cortina-YC6030_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Selladora de Cortina YC6030</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/EquiposDespachadores/10.Túnel-de-Manga-YTM1230_Devek.png" alt="10.Túnel-de-Manga-YTM1230_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Túnel de Manga YTM1230</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisiones -->
+    <div class="columns is-gapless has-background-gray">
+        <div class="column">
+            <div class="section has-background-dark">
+                <div class="container">
+                    <p class="has-text-white has-text-weight-bold is-size-5 is-italic">DIVISIÓN INDUSTRIA</p>
+                </div>
+            </div>
+            <figure class="image">
+                <img src="./assets/Imagenes/Division-Industria_Devek.png" alt="Division-Industria_Devek.png">
+            </figure>
+            <div class="section has-background-gray">
+                <div class="container">
+                    <div class="block">
+                        <p class="has-text-dark is-size-5 is-italic has-text-weight-bold">Agilizamos y optimizamos los costos.</p> 
+                    </div>
+                    <div class="block">
+                        <p class="has-text-dark is-size-5 is-italic">Garantizamos que nuestros materiales y equipos de empaque funcionen de manera impecable.</p>
+                    </div>
+                    <div class="block">
+                        <a class="button has-background-primary has-text-white is-size-5 is-rounded has-text-weight-bold" href="#">
+                            Solicita un diagnóstico
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="section has-background-blue">
+                <div class="container">
+                    <p class="has-text-white has-text-weight-bold is-size-5 is-italic">DIVISIÓN PAPELERÍA Y FERRETERA</p>
+                </div>
+            </div>
+            <figure class="image">
+                <img src="./assets/Imagenes/Division-Papeleria-y-Ferretera_Devek.png" alt="Division-Papeleria-y-Ferretera_Devek.png">
+            </figure>
+            <div class="section has-background-gray" style="border-left: 1px solid white; border-right: 1px solid white;">
+                <div class="container">
+                    <div class="block">
+                        <p class="has-text-dark is-size-5 is-italic has-text-weight-bold">Recibe atención personalizada.</p> 
+                    </div>
+                    <div class="block">
+                        <p class="has-text-dark is-size-5 is-italic">Obtén productos confiables, precios competitivos y un proceso de compra simple y conveniente.</p>
+                    </div>
+                    <div class="block">
+                        <a class="button has-background-primary has-text-white is-size-5 is-rounded has-text-weight-bold" href="#">
+                            Habla con un acesor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="section has-background-red">
+                <div class="container">
+                    <p class="has-text-white has-text-weight-bold is-size-5 is-italic">VENTA AL PÚBLICO</p>
+                </div>
+            </div>
+            <figure class="image">
+                <img src="./assets/Imagenes/Venta-al-Publico_Devek.png" alt="Venta-al-Publico_Devek.png">
+            </figure>
+            <div class="section has-background-gray">
+                <div class="container">
+                    <div class="block">
+                        <p class="has-text-dark is-size-5 is-italic has-text-weight-bold">Devek®, contigo</p> 
+                    </div>
+                    <div class="block">
+                        <p class="has-text-dark is-size-5 is-italic">Realiza tu pedido, págalo y recógelo en nuestra sucursal. Disponible únicamente en Ciudad de México.</p>
+                    </div>
+                    <div class="block">
+                        <a class="button has-background-primary has-text-white is-size-5 is-rounded has-text-weight-bold" href="#">
+                            Levantar pedido
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tendencia -->
+    <section class="section" style="background-color: transparent;">
+        <p class="has-text-dark has-text-weight-bold is-size-5 is-italic pb-4" style="border-bottom: 1px solid #a9a9a9;">EN TENDENCIA >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+        <div id="tendencia" class="carousel" data-flickity='{ "contain": true, "groupCells": true }'>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/1.Cintas-Adhesiva-Transparente_Devek.png" alt="1.Cintas-Adhesiva-Transparente_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cintas Adhesiva Transparente</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/2.Cintas-Adhesiva-Canela_Devek.png" alt="2.Cintas-Adhesiva-Canela_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cintas Adhesiva Canela</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/3.Masking-Tape-_Devek.png" alt="3.Masking-Tape-_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Masking Tape</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/4.Cintas-Adhesiva-Ambar_Devek.png" alt="4.Cintas-Adhesiva-Ambar_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cintas Adhesiva Ambar</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/5.Poliolefina-Brillaflex_Devek.png" alt="5.Poliolefina-Brillaflex_Devek.png">
+                    </figure>
+                    <div class="block">   
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Poliolefina Brillaflex</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/6.Torre-de-6-piezas-Ambar_Devek.png" alt="6.Torre-de-6-piezas-Ambar_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Torre de 6 piezas Ambar</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/7.Cinta-Devekmark_Devek.png" alt="7.Cinta-Devekmark_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cinta Devekmark</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/8.Pelicula-Strech_Devek.png" alt="8.Pelicula-Strech_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Pelicula Strech</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/9.Doble-Capa-Polipropileno_Devek.png" alt="9.Doble-Capa-Polipropileno_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Doble Capa Polipropileno</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">
+                    <figure class="image">
+                        <img src="./assets/Cintas/10.Cinta-Ducto_Devek.png" alt="10.Cinta-Ducto_Devek.png">
+                    </figure>
+                    <div class="block">
+                        <p class="has-text-dark has-text-weight-bold is-italic is-size-5 is-uppercase has-text-centered">Cinta Ducto</p>
+                    </div>
+                    <div class="block">
+                        <p class="has-text-centered"><a class="has-text-primary is-italic is-size-5" href="#">Ver más ></a></p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotizacion -->
+    <section class="hero has-background-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="has-text-white is-size-1 has-text-weight-bold has-text-centered is-italic">Devek®</h1>
+                <h1 class="has-text-white is-size-1 has-text-weight-bold has-text-centered is-italic">Dedicados a proteger lo que te importa.</h1>
+                <p class="has-text-white has-text-centered is-size-5 is-italic pt-5 pb-3">Protegemos y resguardamos tus productos a través de suministros de calidad y maquinaría durable y fácil de operar para eficientar tus procesos de empaque y embalaje.</p>
+                <div class="block pt-6 has-text-centered">
+                    <a class="button has-background-white has-text-white is-size-5 is-rounded has-text-weight-bold has-text-primary" href="#">
+                        Solicita una cotización
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicaciones -->
+    <div class="container pt-6 pb-6">
+        <div class="columns">
+            <div class="column">
+                <figure class="image">
+                    <img src="./assets/Logos/ubicación_ícono.png" style="width: 170px; margin: auto;" alt="ubicación_ícono.png">
+                </figure>
+                <p class="has-text-line has-text-centered is-size-4 has-text-weight-bold is-italic is-uppercase pt-2">Ciudad de México</p>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="./assets/Logos/ubicación_ícono.png" style="width: 170px; margin: auto;" alt="ubicación_ícono.png">
+                </figure>
+                <p class="has-text-line has-text-centered is-size-4 has-text-weight-bold is-italic is-uppercase  pt-2">Monterrey</p>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="./assets/Logos/ubicación_ícono.png" style="width: 170px; margin: auto;" alt="ubicación_ícono.png">
+                </figure>
+                <p class="has-text-line has-text-centered is-size-4 has-text-weight-bold is-italic is-uppercase  pt-2">Guadalajara</p>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="./assets/Logos/ubicación_ícono.png" style="width: 170px; margin: auto;" alt="ubicación_ícono.png">
+                </figure>
+                <p class="has-text-line has-text-centered is-size-4 has-text-weight-bold is-italic is-uppercase  pt-2">Querétaro</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Envios -->
+    <div class="columns is-mobile is-gapless">
+        <div class="column is-three-fifths">
+            <figure class="image">
+                <img src="./assets/Imagenes/Envios-a-todo-Mexico_Devek.png" alt="Envios-a-todo-Mexico_Devek.png" height="100%">
+            </figure>
+        </div>
+        <div class="column is-two-fifths has-background-blue">
+            <div class="container pt-6">
+                <div class="block pl-2 pt-4">
+                    <h1 class="has-text-white is-size-2 has-text-weight-bold is-italic is-uppercase">ENVÍOS A TODO MÉXICO</h1>
+                    <p class="has-text-white is-size-5 is-italic pt-1"><i class="fa-solid fa-check"></i> Atención y seguimiento desde el primer minuto</p>
+                    <p class="has-text-white is-size-5 is-italic pt-1"><i class="fa-solid fa-check"></i> Servicios urgentes a toda la República Mexicana</p>
+                    <p class="has-text-white is-size-5 is-italic pt-1"><i class="fa-solid fa-check"></i> Entregas el mismo día en CDMX para productos de línea</p>
+                </div>
+                <div class="block pl-2">
+                    <p class="has-text-white is-size-6 is-italic pt-4">*Las entregas a otros estados pueden variar dependiendo de la paquetería.</p>
+                </div>
+                <div class="block pl-2 pt-4">
+                    <a class="button has-background-primary has-text-white is-size-5 is-rounded has-text-weight-bold " style="border: none;" href="#">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empaque -->
+    <section class="section">
+        <div class="container pb-6">
+            <h1 class="has-text-dark is-size-2 has-text-centered has-text-weight-bold is-italic">Domina cualquier desafío del empaque y embalaje.</h1>
+            <p class="has-text-dark has-text-centered is-italic is-size-4 pt-5">Nuestros suministros y equipos de empaque son tus fieles aliados para garantizar la integridad de tus productos.</p>
+            <p class="has-text-dark has-text-centered is-italic is-size-4">Juntos, enfrentamos cualquier desafío, aseguramos la protección del producto y el éxito de tus procesos.</p>
+        </div>
+        <div id="embalaje" class="carousel pt-5" data-flickity='{ "groupCells": "85%" }'>
+            <div class="carousel-cell">
+                <figure class="image">
+                    <img src="./assets/Imagenes/Historia-01_Devek.png" alt="Historia-01_Devek.png">
+                </figure>
+                <div class="container" style="margin-top: -12rem; background-color: transparent;">
+                    <p class="has-text-white has-text-weight-bold is-size-4 is-italic" style="z-index: 100; margin-top: -14rem; margin-left: 2rem; padding-bottom: 1rem; padding-top: 4rem;">LOREM IPSUM DOLOR</p>
+                    <a class="button is-rounded has-background-primary has-text-weight-bold has-text-white is-italic is-size-4" style="border: none; z-index: 100;  margin-left: 2rem; margin-bottom: 1rem;" href="#">Ir</a>
+                </div>
+                <div class="section" style="height: 15px;"></div>
+            </div>
+            <div class="carousel-cell">
+                <figure class="image">
+                    <img src="./assets/Imagenes/Historia-02_Devek.png" alt="Historia-02_Devek.png">
+                </figure>
+                <div class="container" style="margin-top: -12rem; background-color: transparent;">
+                    <p class="has-text-white has-text-weight-bold is-size-4 is-italic" style="z-index: 100; margin-top: -14rem; margin-left: 2rem; padding-bottom: 1rem; padding-top: 4rem;">LOREM IPSUM DOLOR</p>
+                    <a class="button is-rounded has-background-primary has-text-weight-bold has-text-white is-italic is-size-4" style="border: none; z-index: 100;  margin-left: 2rem; margin-bottom: 1rem;" href="#">Ir</a>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <figure class="image">
+                    <img src="./assets/Imagenes/Historia-03_Devek.png" alt="Historia-03_Devek.png">
+                </figure>
+                <div class="container" style="margin-top: -12rem; background-color: transparent;">
+                    <p class="has-text-white has-text-weight-bold is-size-4 is-italic" style="z-index: 100; margin-top: -14rem; margin-left: 2rem; padding-bottom: 1rem; padding-top: 4rem;">LOREM IPSUM DOLOR</p>
+                    <a class="button is-rounded has-background-primary has-text-weight-bold has-text-white is-italic is-size-4" style="border: none; z-index: 100;  margin-left: 2rem; margin-bottom: 1rem;" href="#">Ir</a>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <figure class="image">
+                    <img src="./assets/Imagenes/Historia-04_Devek.png" alt="Historia-04_Devek.png">
+                </figure>
+                <div class="container" style="margin-top: -12rem; background-color: transparent;">
+                    <p class="has-text-white has-text-weight-bold is-size-4 is-italic" style="z-index: 100; margin-top: -14rem; margin-left: 2rem; padding-bottom: 1rem; padding-top: 4rem;">LOREM IPSUM DOLOR</p>
+                    <a class="button is-rounded has-background-primary has-text-weight-bold has-text-white is-italic is-size-4" style="border: none; z-index: 100;  margin-left: 2rem; margin-bottom: 1rem;" href="#">Ir</a>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <figure class="image">
+                    <img src="./assets/Imagenes/Historia-05_Devek.png" alt="Historia-05_Devek.png">
+                </figure>
+                <div class="container" style="margin-top: -12rem; background-color: transparent;">
+                    <p class="has-text-white has-text-weight-bold is-size-4 is-italic" style="z-index: 100; margin-top: -14rem; margin-left: 2rem; padding-bottom: 1rem; padding-top: 4rem;">LOREM IPSUM DOLOR</p>
+                    <a class="button is-rounded has-background-primary has-text-weight-bold has-text-white is-italic is-size-4" style="border: none; z-index: 100;  margin-left: 2rem; margin-bottom: 1rem;" href="#">Ir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="has-background-dark pb-4">
+        <div style="height: 40px; border-bottom: 1px solid white; display: block;"></div>
+        <div class="container pt-5">
+            <div class="columns is-variable is-8">
+                <div class="column is-one-third">
+                    <p class="has-text-white is-italic has-text-weight-bold is-size-5">DEVEK ®</p>
+                    <div id="catalogo" class="carousel pt-4 pb-4" data-flickity>
+                        <div class="carousel-cell">
+                            <figure class="image">
+                                <img src="./assets/Catalogo/catalogo-imagen_Devek.png" alt="catalogo-imagen_Devek.png">
+                            </figure>
+                        </div>
+                        <div class="carousel-cell">
+                            <figure class="image">
+                                <img src="./assets/Catalogo/catalogo-imagen_Devek.png" alt="catalogo-imagen_Devek.png">
+                            </figure>
+                        </div>
+                        <div class="carousel-cell">
+                            <figure class="image">
+                                <img src="./assets/Catalogo/catalogo-imagen_Devek.png" alt="catalogo-imagen_Devek.png">
+                            </figure>
+                        </div>
+                    </div>
+                    <p class="has-text-white is-italic has-text-weight-bold is-size-5">Descárgalo ></p>
+                </div>
+                <div class="column columns is-two-thirds">
+                    <div class="column">
+                        <div class="block">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">NOSOTROS</p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Nuestra historia</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Bolsa de trabajo</a></p>
+                        </div>
+                        <div class="block pt-4">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">OFERTA</p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Cintas adhesivas y películas plásticas</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Equipos y despachadores</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Refacciones para maquinaria</a></p>
+                        </div>
+                    </div>
+                    <div style="border-left: solid 1px white; height: 50%; display: block; margin-top: 5%"></div>
+                    <div class="column">
+                        <div class="block">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">CLIENTES</p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">División Industria</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">División Papelería</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">División Ferretera</a></p>
+                        </div>
+                        <div class="block pt-4">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">SOPORTE AL CLIENTE</p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Servicio técnico</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Facturación</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Comentarios y sugerencias</a></p>
+                        </div>
+                    </div>
+                    <div style="border-left: solid 1px white; height: 50%; display: block; margin-top: 5%"></div>
+                    <div class="column">
+                        <div class="block pb-6">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">SUCURSALES</p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Contactar con Ciudad de México</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Contactar con Monterrey</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Contactar con Guadalajara</a></p>
+                            <p><a class="has-text-white has-text-weight-bold is-italic is-size-6" href="#">Contactar con Querétaro</a></p>
+                        </div>
+                        <div class="block pt-6">
+                            <div class="level pt-6">
+                                <div class="level-left"></div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <div class="is-size-5 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 3rem; height: 3rem;">
+                                            <i class="fa-brands fa-linkedin-in" style="padding-top: 30%; padding-left: 33%;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="is-size-5 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 3rem; height: 3rem;">
+                                            <i class="fa-brands fa-youtube" style="padding-top: 31%; padding-left: 27%;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container pt-3">
+        <div class="columns">
+            <div class="column">
+                <div class="level" style="height: 100%;">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="has-text-dark is-italic has-text-weight-bold is-size-5">PRÓXIMOS EVENTOS</p>
+                        </div>
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/Logo_ExpoPack-Mexico.png" style="width: 75px;" alt="Logo_ExpoPack-Mexico.png">
+                            </figure>
+                        </div>
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/Logo_ExpoPack-Guadalajara.png" style="width: 75px;" alt="Logo_ExpoPack-Guadalajara.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="level" style="height: 100%;">
+                    <div class="level-item">
+                        <p><a href="" class="has-text-dark is-italic has-text-weight-bold is-size-6">Aviso de privacidad</a></p>
+                    </div>
+                    <div class="level-item">
+                        <p><a href="" class="has-text-dark is-italic has-text-weight-bold is-size-6">Política de calidad</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="level" style="height: 100%;">
+                    <div class="level-left"></div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/ISO-9001_Devek.png" style="width: 130px;" alt="ISO-9001_Devek.png">
+                            </figure>
+                        </div>
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/ISO-22000_Devek.png" style="width: 130px;" alt="ISO-22000_Devek.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="has-background-primary pt-1 pb-1">
+        <p class="has-text-white is-italic has-text-centered"><span class="has-text-weight-bold">© 2024 Devek</span> Todos los derechos reservados.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/18b1f3a72b.js" crossorigin="anonymous"></script>
+    <script src="./assets/flickity.pkgd.min.js"></script>
+    <script src="./assets/jquery-3.7.1.min.js"></script>
+</body>
+</html>
