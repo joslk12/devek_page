@@ -44,8 +44,11 @@
 
 .navbar-item:hover {
     background-color: transparent !important;
-    border-bottom: 2px solid white !important;
-    color: white !important;;
+    border: none;
+    color: white !important;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-thickness: 2px;
 }
 
 #mainBanner .flickity-page-dots {
@@ -194,7 +197,7 @@
 }
 
 #embalaje .carousel-cell {
-    width: 40%;
+    width: 30%;
     margin-right: 20px;
   }
 
@@ -260,6 +263,22 @@
     color: #292a2d;
  }
 
+ .textarea  {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #a9a9a9;
+    border-radius: 0px;
+    box-shadow: none !important;
+    background-color: transparent;
+    font-weight: 600;
+    font-style: italic;
+    color: #292a2d;
+ }
+ .textarea::placeholder {
+    color: #292a2d;
+ }
+
 .select  {
     width: 100%;
     border-top: none !important;
@@ -279,3 +298,27 @@
     font-style: italic;
     color: #292a2d;
  }
+
+ .product-name {
+    height: 85px;
+    overflow: hidden;
+ }
+
+ .division-title {
+    height: 150px;
+    margin-bottom: 0 !important;
+}
+
+.division-subtitle {
+    height: 60px;
+}
+
+.division-content {
+    height: 150px;
+}
+
+.thanks {
+    background-image: url('./assets/Imagenes/imagen-thank-you-page_devek_web.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
