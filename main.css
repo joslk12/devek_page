@@ -350,3 +350,8 @@
     color: #292a2d !important;
     opacity: 1;
 }
+
+.hide-radio:hover {
+    background-color: #00a041 !important;
+    opacity: .5;
+}
