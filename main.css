@@ -305,7 +305,7 @@
  }
 
  .division-title {
-    height: 150px;
+    height: 85px;
     margin-bottom: 0 !important;
 }
 
@@ -321,4 +321,32 @@
     background-image: url('./assets/Imagenes/imagen-thank-you-page_devek_web.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.button {
+    border: none;
+}
+
+.ms-choice {
+    background: transparent !important;
+    border: none !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+}
+
+.icon-caret {
+    display: none !important;
+}
+
+.ms-drop {
+    background: #00a041 !important;
+    font-style: italic !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.placeholder {
+    background: transparent !important;
+    color: #292a2d !important;
+    opacity: 1;
 }

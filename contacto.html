@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./assets/flickity.css">
+    <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.7.0/dist/multiple-select.min.css">
     <title>Devek</title>
 </head>
 <body>
@@ -15,24 +16,24 @@
         <div class="level is-mobile pt-4 pb-4">
             <div class="level-left">
                 <div class="level-item">
-                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold">
+                    <p class="is-size-6 has-text-dark is-italic has-text-weight-bold">
                         Grupo Mexicano Imperial
                     </p>
                 </div>
             </div>
             <div class="level-right">
                 <div class="level-item">
-                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                    <p class="is-size-6 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
                         <i class="fa-solid fa-phone"></i> <a class="has-text-dark" href="tel:+525541654165">(55) 4165-4165</a>
                     </p>
                 </div>
                 <div class="level-item">
-                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                    <p class="is-size-6 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
                         <i class="fa-solid fa-envelope"></i> <a class="has-text-dark" href="mailto:ventas@devek.com.mx">ventas@devek.com.mx</a>
                     </p>
                 </div>
                 <div class="level-item">
-                    <p class="is-size-5 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                    <p class="is-size-6 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
                         <i class="fa-solid fa-check"></i> Cotizaciones
                     </p>
                 </div>
@@ -56,10 +57,10 @@
             <nav class="navbar has-background-primary " role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="/">
-                            <img src="./assets/Logos/Devek_logo-principal.png" alt="Devek_logo-principal.png" style="max-width: 200px; height: auto; max-height: fit-content;">
+                            <img src="./assets/Logos/Devek_logo-principal.png" alt="Devek_logo-principal.png" style="max-width: 180px; height: auto; max-height: fit-content;">
                         </a>
                     
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <a role="button" class="navbar-burger has-text-white has-text-weight-bold" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -67,7 +68,7 @@
                     </div>
 
                     <div id="navbarBasicExample" class="navbar-menu">
-                        <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1.1rem;">
+                        <div class="navbar-start has-text-white has-text-weight-bold is-italic" style="font-size: 1.1rem;">
                           <a class="navbar-item has-text-white">
                             Materiales de Empaque
                           </a>
@@ -89,8 +90,9 @@
                                 Contáctanos
                               </a>
                           </div>
+                          <a href="" class="navbar-item has-text-white" style="font-size: 2rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
-                      </div>
+                    </div>
             </nav>
         </div>  
     </section>
@@ -111,11 +113,13 @@
     <div class="columns is-gapless" style="margin: 0;">
         <div class="column has-background-blue">
             <div class="container p-6" style="vertical-align: middle;">
-                <h1 class="has-text-white has-text-weight-bold is-size-2 is-italic pt-6">¡Estamos aquí para brindarte un servicio eficiente!</h1>
-                <div class="block pt-6">
+                <div style="height: 120px; position: relative;">
+                    <h1 class="has-text-white has-text-weight-bold is-size-3 is-italic" style="position: absolute; bottom: 0;">¡Estamos aquí para brindarte un servicio eficiente!</h1>
+                </div>
+                <div class="block pt-5">
                     <p class="has-text-white is-size-5 is-italic"> A continuación, te presentamos los siete pasos que seguimos para ofrecerte la mejor atención:</p>
                 </div>
-                <div class="block pt-6 has-text-white is-size-5 is-italic">
+                <div class="block pt-5 has-text-white is-size-5 is-italic">
                     <p>1. Solicita información</p>
                     <p>2. Nos comunicamos contigo</p>
                     <p>3. Recibe la cotización</p>
@@ -124,15 +128,17 @@
                     <p>6. Recibe o recoge el material</p>
                     <p>7. Verificamos tu satisfacción</p>
                 </div>
-                <div class="block pt-6 has-text-white is-size-5 is-italic pb-6">
+                <div class="block pt-5 has-text-white is-size-5 is-italic pb-6">
                     <p>Dedicados a hacer que tu experiencia sea completamente satisfactoria. Diseñamos nuestros procesos para contactarte en menos de 45 minutos.</p>
                 </div>
             </div>    
         </div>
         <div class="column has-background-gray">
             <div class="container p-6" style="vertical-align: middle;">
-                <h1 class="has-text-dark has-text-weight-bold is-size-2 is-italic pt-6">Será un placer atenderte</h1>
-                <div class="form">
+                <div style="height: 120px; position: relative;">
+                    <h1 class="has-text-dark has-text-weight-bold is-size-3 is-italic" style="position: absolute; bottom: 0;">Será un placer atenderte</h1>
+                </div>
+                <div class="form pt-5">
                     <div class="field">
                         <div class="control">
                           <input class="input" type="text" placeholder="Nombre:">
@@ -160,14 +166,48 @@
                     </div>
                     <div class="field">
                         <div class="control">
-                          <input class="input" type="text" placeholder="Estado:">
+                          <div class="select is-dark">
+                            <select multiple="multiple" data-single="true" placeholder="Estado:">
+                                    <option value="AGS">Aguascalientes</option>
+                                    <option value="BCN">Baja California</option>
+                                    <option value="BCS">Baja California Sur</option>
+                                    <option value="CAM">Campeche</option>
+                                    <option value="CHP">Chiapas</option>
+                                    <option value="CHI">Chihuahua</option>
+                                    <option value="CDMX">Ciudad de México</option>
+                                    <option value="COA">Coahuila</option>
+                                    <option value="COL">Colima</option>
+                                    <option value="DUR">Durango</option>
+                                    <option value="GTO">Guanajuato</option>
+                                    <option value="GRO">Guerrero</option>
+                                    <option value="HGO">Hidalgo</option>
+                                    <option value="JAL">Jalisco</option>
+                                    <option value="MEX">Estado de México</option>
+                                    <option value="MIC">Michoacán</option>
+                                    <option value="MOR">Morelos</option>
+                                    <option value="NAY">Nayarit</option>
+                                    <option value="NLE">Nuevo León</option>
+                                    <option value="OAX">Oaxaca</option>
+                                    <option value="PUE">Puebla</option>
+                                    <option value="QRO">Querétato</option>
+                                    <option value="ROO">Quintana Roo</option>
+                                    <option value="SLP">San Luis Potosí</option>
+                                    <option value="SIN">Sinaloa</option>
+                                    <option value="SON">Sonora</option>
+                                    <option value="TAB">Tabasco</option>
+                                    <option value="TAM">Tamaulipas</option>
+                                    <option value="TLX">Tlaxcala</option>
+                                    <option value="VER">Veracruz</option>
+                                    <option value="YUC">Yucatán</option>
+                                    <option value="ZAC">Zacatecas</option>
+                            </select>
+                          </div>
                         </div>
                     </div>
                     <div class="field">
                         <div class="control">
                             <div class="select is-dark" width="100%">
-                                <select>
-                                    <option value="" disabled selected>Producto en el que estoy interesado:</option>
+                                <select multiple="multiple" placeholder="Producto en el que estoy interesado:">
                                     <option value="Materiales de empaque">Materiales de empaque</option>
                                     <option value="Equipos y accesorios de empaque">Equipos y accesorios de empaque</option>
                                     <option value="Refacciones y servicio técnico">Refacciones y servicio técnico</option>
@@ -179,8 +219,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select is-dark">
-                                <select>
-                                    <option value="" disabled selected>¿Qué tipo de problema está presentando?</option>
+                                <select multiple="multiple" data-single="true" placeholder="¿Qué tipo de problema está presentando?">
                                     <option value="Tengo problemas de calidad con los materiales actuales">Tengo problemas de calidad con los materiales actuales</option>
                                     <option value="Busco un mejor precio">Busco un mejor precio</option>
                                     <option value="Busco mejor tiempo de entrega / Mejor servicio">Busco mejor tiempo de entrega / Mejor servicio</option>
@@ -195,8 +234,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select is-dark">
-                                <select>
-                                    <option value="" disabled selected>Tipo se interés:</option>
+                                <select multiple="multiple" data-single="true" placeholder="Tipo de interés:">
                                     <option value="Los necesito para la empresa">Los necesito para la empresa</option>
                                     <option value="Los quiero distribuir">Los quiero distribuir</option>
                                     <option value="Los voy a utilizar para uso personal">Los voy a utilizar para uso personal</option>
@@ -207,8 +245,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select is-dark">
-                                <select>
-                                    <option value="" disabled selected>¿Cada cuánto compro este producto?</option>
+                                <select multiple="multiple" data-single="true" placeholder="¿Cada cuánto compro este producto?">
                                     <option value="Por única ocasión">Por única ocasión</option>
                                     <option value="Mensual o por otro periodo de tiempo">Mensual o por otro periodo de tiempo</option>
                                   </select>
@@ -218,7 +255,7 @@
                     <div class="field">
                         <div class="control">
                             <!-- <label class="label">Por favor, utilice las siguientes líneas para describir su necesidad/problema actual.</label> -->
-                            <textarea class="textarea" placeholder="Por favor, utilice las siguientes líneas para describir su necesidad/problema actual."></textarea>
+                            <textarea class="textarea" placeholder="Por favor, el siguiente espacio para describir su necesidad/problema actual."></textarea>
                         </div>
                     </div>
                     <div class="field">
@@ -239,7 +276,7 @@
                             style="width: 15rem"
                             onclick="sendMessage()"
                           >
-                            Enviar Mensaje
+                            Enviar mensaje
                           </button>
                         </div>
                       </div>
@@ -367,7 +404,7 @@
     <div class="container pt-3">
         <div class="columns">
             <div class="column">
-                <div class="level" style="height: 100%;">
+                <!-- <div class="level" style="height: 100%;">
                     <div class="level-left">
                         <div class="level-item">
                             <p class="has-text-dark is-italic has-text-weight-bold is-size-5">PRÓXIMOS EVENTOS</p>
@@ -383,7 +420,7 @@
                             </figure>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="column">
                 <div class="level" style="height: 100%;">
@@ -422,10 +459,18 @@
     <script src="https://kit.fontawesome.com/18b1f3a72b.js" crossorigin="anonymous"></script>
     <script src="./assets/flickity.pkgd.min.js"></script>
     <script src="./assets/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/multiple-select@1.7.0/dist/multiple-select.min.js"></script>
     <script>
         function sendMessage() {
             window.location.href = "/thankyou.html";
         }
+    </script>
+    <script>
+        $(function () {
+            $('select').multipleSelect({
+                selectAll: false
+            });
+        })
     </script>
 </body>
 </html>
