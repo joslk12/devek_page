@@ -14,7 +14,7 @@
     <div class="container">
         <div class="level is-mobile pt-4 pb-4">
             <div class="level-left">
-                <div class="level-item">
+                <div id="grupo" class="level-item">
                     <p class="is-size-6 has-text-dark is-italic has-text-weight-bold">
                         Grupo Mexicano Imperial
                     </p>
@@ -23,15 +23,17 @@
             <div class="level-right">
                 <div class="level-item">
                     <p class="is-size-6 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
-                        <i class="fa-solid fa-phone"></i> <a class="has-text-dark" href="tel:+525541654165">(55) 4165-4165</a>
+                        <a id="tel" class="has-text-dark" href="tel:+525541654165"><i class="fa-solid fa-phone"></i> (55) 4165-4165</a>
+                        <a id="telMob" class="has-text-dark" href="tel:+525541654165"><i class="fa-solid fa-phone"></i></a>
                     </p>
                 </div>
                 <div class="level-item">
                     <p class="is-size-6 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
-                        <i class="fa-solid fa-envelope"></i> <a class="has-text-dark" href="mailto:ventas@devek.com.mx">ventas@devek.com.mx</a>
+                        <a id="mail" class="has-text-dark" href="mailto:ventas@devek.com.mx"><i class="fa-solid fa-envelope"></i> ventas@devek.com.mx</a>
+                        <a id="mailMob" class="has-text-dark" href="mailto:ventas@devek.com.mx"><i class="fa-solid fa-envelope"></i></a>
                     </p>
                 </div>
-                <div class="level-item">
+                <div id="cot" class="level-item">
                     <p class="is-size-6 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
                         <i class="fa-solid fa-check"></i> Cotizaciones
                     </p>
@@ -59,15 +61,15 @@
                             <img src="./assets/Logos/Devek_logo-principal.png" alt="Devek_logo-principal.png" style="max-width: 180px; height: auto; max-height: fit-content;">
                         </a>
                     
-                        <a role="button" class="navbar-burger has-text-white has-text-weight-bold" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <a role="button" onclick="showMenu()" class="navbar-burger has-text-white has-text-weight-bold" aria-label="menu" aria-expanded="false">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         </a>
                     </div>
 
-                    <div id="navbarBasicExample" class="navbar-menu">
-                        <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1.1rem;">
+                    <div id="mainNav" class="navbar-menu">
+                        <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1rem;">
                           <a class="navbar-item has-text-white">
                             Materiales de Empaque
                           </a>
@@ -85,11 +87,38 @@
                           </a>
 
                           <div class="navbar-item">
-                            <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1.1rem;">
+                            <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1rem;">
                                 Contáctanos
                               </a>
                           </div>
-                          <a class="navbar-item has-text-white" style="font-size: 2rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                          <a href="#" class="navbar-item has-text-white" style="font-size: 1.3rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div id="respNav" class="navbar-menu">
+                        <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1rem;">
+                            <div class="navbar-item has-dropdown has-text-white has-text-weight-bold is-italic is-hoverable">
+                                <a class="navbar-link has-text-white is-arrowless">
+                                  Productos
+                                </a>
+                        
+                                <div class="navbar-dropdown has-background-primary has-text-white" style="font-size: 1rem;">
+                                  <a class="navbar-item has-text-white">
+                                    Materiales de Empaque
+                                  </a>
+                                  <a class="navbar-item has-text-white">
+                                    Equipos y Accesorios de Empaque
+                                  </a>
+                                  <a class="navbar-item has-text-white">
+                                    Papelera y Ferretera
+                                  </a>
+                              </div>
+                            </div>
+                            <div class="navbar-item">
+                                <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1rem;">
+                                    Contáctanos
+                                </a>
+                            </div>
+                            <a href="#" class="navbar-item has-text-white" style="font-size: 1.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
             </nav>
@@ -107,23 +136,23 @@
             <h1 class="is-size-1 has-text-centered has-text-weight-bold is-italic pt-6">¡Gracias por confiar en nosotros!</h1>
             <h1 class="is-size-1 has-text-centered has-text-weight-bold is-italic">Devek ® protege lo que te importa.</h1>
 
-            <p class="is-size-5 has-text-centered is-italic pt-6">Tu solicitud está siendo procesada y pronto recibirás seguimiento de nuestros asesores.</p>
-            <p class="is-size-5 has-text-centered is-italic">Como tus aliados, estamos listos para superar cualquier desafío en el empaque y embalaje de tus productos.</p>
-            <p class="is-size-5 has-text-centered is-italic">Si necesitas una respuesta inmediata, no dudes en llamarnos ahora mismo.</p>
-            <p class="is-size-5 has-text-centered is-italic pb-4">¡Estamos aquí para ayudarte!</p>
+            <p class="is-size-6 has-text-centered is-italic pt-6">Tu solicitud está siendo procesada y pronto recibirás seguimiento de nuestros asesores.</p>
+            <p class="is-size-6 has-text-centered is-italic">Como tus aliados, estamos listos para superar cualquier desafío en el empaque y embalaje de tus productos.</p>
+            <p class="is-size-6 has-text-centered is-italic">Si necesitas una respuesta inmediata, no dudes en llamarnos ahora mismo.</p>
+            <p class="is-size-6 has-text-centered is-italic pb-4">¡Estamos aquí para ayudarte!</p>
 
             <div class="block pt-6 pb-6">
                 <div class="level">
                     <div class="level-item">
                         <a
-                            class="button has-background-primary has-text-white is-rounded has-text-weight-bold is-size-5 mr-4"
+                            class="button has-background-primary has-text-white is-rounded has-text-weight-bold is-size-6 mr-4"
                             style="width: 11rem"
                             href="tel:+525541654165"
                         >
                             Llamar
                         </a>
                         <a
-                            class="button has-background-primary has-text-white is-rounded has-text-weight-bold is-size-5 ml-4"
+                            class="button has-background-primary has-text-white is-rounded has-text-weight-bold is-size-6 ml-4"
                             style="width: 11rem"
                             href="index.html"
                         >
@@ -141,7 +170,7 @@
         <div class="container pt-5">
             <div class="columns is-variable is-8">
                 <div class="column is-one-third">
-                    <p class="has-text-white is-italic has-text-weight-bold is-size-5">DEVEK ®</p>
+                    <p class="has-text-white is-italic has-text-weight-bold is-size-6">DEVEK ®</p>
                     <div id="catalogo" class="carousel pt-4 pb-4" data-flickity>
                         <div class="carousel-cell">
                             <figure class="image">
@@ -159,48 +188,48 @@
                             </figure>
                         </div>
                     </div>
-                    <p class="has-text-white is-italic has-text-weight-bold is-size-5">Descárgalo ></p>
+                    <p class="has-text-white is-italic has-text-weight-bold is-size-6">Descárgalo ></p>
                 </div>
-                <div class="column columns is-two-thirds">
+                <div class="column columns is-mobile is-two-thirds">
                     <div class="column">
                         <div class="block">
-                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">NOSOTROS</p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Nuestra historia</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Bolsa de trabajo</a></p>
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-6">NOSOTROS</p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Nuestra historia</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Bolsa de trabajo</a></p>
                         </div>
                         <div class="block pt-4">
-                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">OFERTA</p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Materiales de empaque</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Equipos y accesorios de empaque</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Refacciones para maquinaria</a></p>
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-6">OFERTA</p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Materiales de empaque</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Equipos y accesorios de empaque</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Refacciones para maquinaria</a></p>
                         </div>
                     </div>
                     <div style="border-left: solid 1px white; height: 50%; display: block; margin-top: 5%"></div>
                     <div class="column">
                         <div class="block">
-                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">CLIENTES</p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">División Industria</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">División Papelería</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">División Ferretera</a></p>
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-6">CLIENTES</p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">División Industria</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">División Papelería</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">División Ferretera</a></p>
                         </div>
                         <div class="block pt-4">
-                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">SOPORTE AL CLIENTE</p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Servicio técnico</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Facturación</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Comentarios y sugerencias</a></p>
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-6">SOPORTE AL CLIENTE</p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Servicio técnico</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Facturación</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Comentarios y sugerencias</a></p>
                         </div>
                     </div>
                     <div style="border-left: solid 1px white; height: 50%; display: block; margin-top: 5%"></div>
                     <div class="column">
                         <div class="block pb-6">
-                            <p class="has-text-white has-text-weight-bold is-italic is-size-5">SUCURSALES</p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Contactar con Ciudad de México</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Contactar con Monterrey</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Contactar con Guadalajara</a></p>
-                            <p><a class="has-text-white is-italic is-size-6" href="#">Contactar con Querétaro</a></p>
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-6">SUCURSALES</p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Contactar con Ciudad de México</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Contactar con Monterrey</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Contactar con Guadalajara</a></p>
+                            <p><a class="has-text-white is-italic footer-link" href="#">Contactar con Querétaro</a></p>
                         </div>
                         <div class="block pt-6">
-                            <div class="level pt-6">
+                            <div class="level is-mobile pt-6">
                                 <div class="level-left"></div>
                                 <div class="level-right">
                                     <div class="level-item">
@@ -224,10 +253,10 @@
     <div class="container pt-3">
         <div class="columns">
             <div class="column">
-                <div class="level" style="height: 100%;">
-                    <!-- <div class="level-left">
+                <!-- <div class="level" style="height: 100%;">
+                    <div class="level-left">
                         <div class="level-item">
-                            <p class="has-text-dark is-italic has-text-weight-bold is-size-5">PRÓXIMOS EVENTOS</p>
+                            <p class="has-text-dark is-italic has-text-weight-bold is-size-6">PRÓXIMOS EVENTOS</p>
                         </div>
                         <div class="level-item">
                             <figure class="image">
@@ -239,11 +268,11 @@
                                 <img src="./assets/Logos/Logo_ExpoPack-Guadalajara.png" style="width: 75px;" alt="Logo_ExpoPack-Guadalajara.png">
                             </figure>
                         </div>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
             </div>
             <div class="column">
-                <div class="level" style="height: 100%;">
+                <div class="level is-mobile" style="height: 100%;">
                     <div class="level-item">
                         <p><a href="" class="has-text-dark is-italic has-text-weight-bold is-size-6">Aviso de privacidad</a></p>
                     </div>
@@ -253,17 +282,17 @@
                 </div>
             </div>
             <div class="column">
-                <div class="level" style="height: 100%;">
+                <div class="level is-mobile" style="height: 100%;">
                     <div class="level-left"></div>
                     <div class="level-right">
                         <div class="level-item">
                             <figure class="image">
-                                <img src="./assets/Logos/ISO-9001_Devek.png" style="width: 130px;" alt="ISO-9001_Devek.png">
+                                <img src="./assets/Logos/ISO-9001_Devek.png" style="width: 100px;" alt="ISO-9001_Devek.png">
                             </figure>
                         </div>
                         <div class="level-item">
                             <figure class="image">
-                                <img src="./assets/Logos/ISO-22000_Devek.png" style="width: 130px;" alt="ISO-22000_Devek.png">
+                                <img src="./assets/Logos/ISO-22000_Devek.png" style="width: 100px;" alt="ISO-22000_Devek.png">
                             </figure>
                         </div>
                     </div>
@@ -279,5 +308,6 @@
     <script src="https://kit.fontawesome.com/18b1f3a72b.js" crossorigin="anonymous"></script>
     <script src="./assets/flickity.pkgd.min.js"></script>
     <script src="./assets/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

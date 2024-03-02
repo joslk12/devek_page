@@ -50,6 +50,45 @@
     text-underline-offset: .5rem;
     text-decoration-thickness: 2px;
 }
+.navbar-menu {
+    background-color: transparent !important;
+}
+
+.navbar-link:hover {
+    background-color: transparent !important;
+}
+
+.navbar-link:focus {
+    background-color: transparent !important;
+}
+
+.navbar-dropdown {
+    background-color: #00a041 !important;
+}
+
+.navbar-dropdown:hover {
+    background-color: #00a041 !important;
+}
+
+.navbar-dropdown:focus {
+    background-color: #00a041 !important;
+}
+
+.has-dropdown:hover {
+    background-color: transparent !important;
+}
+
+.has-dropdown:focus {
+    background-color: transparent !important;
+}
+
+.is-hoverable:hover {
+    background-color: transparent !important;
+}
+
+.is-hoverable:focus {
+    background-color: #00a041 !important;
+}
 
 #mainBanner .flickity-page-dots {
     bottom: 10px !important;
@@ -189,7 +228,7 @@
 
 
 #embalaje .flickity-page-dots {
-    display: none;;
+    display: none;
 }
 
 #embalaje .flickity-slider {
@@ -197,7 +236,7 @@
 }
 
 #embalaje .carousel-cell {
-    width: 30%;
+    width: 25%;
     margin-right: 20px;
   }
 
@@ -214,7 +253,7 @@
 }
 
 #catalogo .flickity-page-dots {
-    display: none;;
+    display: none;
 }
 
 #catalogo .carousel-cell {
@@ -260,7 +299,7 @@
     color: #292a2d;
  }
  .input::placeholder {
-    color: #292a2d;
+    color: #292a2d !important;
  }
 
  .textarea  {
@@ -276,7 +315,7 @@
     color: #292a2d;
  }
  .textarea::placeholder {
-    color: #292a2d;
+    color: #292a2d !important;
  }
 
 .select  {
@@ -300,7 +339,7 @@
  }
 
  .product-name {
-    height: 85px;
+    height: 45px;
     overflow: hidden;
  }
 
@@ -310,11 +349,11 @@
 }
 
 .division-subtitle {
-    height: 60px;
+    height: 40px;
 }
 
 .division-content {
-    height: 150px;
+    height: 125px;
 }
 
 .thanks {
@@ -354,4 +393,58 @@
 .hide-radio:hover {
     background-color: #00a041 !important;
     opacity: .5;
+}
+
+.navbar-burger {
+    margin-top: auto !important;
+    margin-bottom:auto !important;
+}
+
+.navbar-burger span {
+    width: 18px;
+    padding-top: 2px
+}
+
+.section {
+    padding-top: 1rem !important;
+    padding-bottom:  1rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+.footer-link {
+    font-size: 14px !important;
+}
+
+@media screen and (max-width: 768px) {
+    #equipoCar .flickity-page-dots {
+        padding-left: 0;
+        top: auto;
+    }
+    #tendencia .flickity-page-dots {
+        padding-left: 0;
+        top: auto;
+    }
+    #empaqueProduct .flickity-page-dots {
+        padding-left: 0;
+        top: auto;
+    }
+    #empaqueProduct .carousel-cell {
+        width: 50%;
+    }
+    #tendencia .carousel-cell {
+        width: 50%;
+    }
+    #equipoCar .carousel-cell {
+        width: 50%;
+    }
+    #embalaje .carousel-cell {
+        width: 85%;
+    }
+}
+
+@media  screen and (max-width: 991px) {
+    .navbar-brand {
+        width: 100%;
+    }
 }
