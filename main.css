@@ -133,6 +133,14 @@
     display: none;
   }
 
+#mainBanner .carousel-cell {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #292a2d;
+}
+
 #empaqueProduct .flickity-page-dots {
     top: -40px;
     padding-left: 90%;
@@ -247,6 +255,7 @@
 #embalaje .carousel-cell {
     width: 25%;
     margin-right: 20px;
+    max-height: 400px;
   }
 
 #embalaje .flickity-prev-next-button.next {
