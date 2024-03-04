@@ -133,13 +133,13 @@
     display: none;
   }
 
-#mainBanner .carousel-cell {
+/* #mainBanner .carousel-cell {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #292a2d;
-}
+} */
 
 #empaqueProduct .flickity-page-dots {
     top: -40px;
