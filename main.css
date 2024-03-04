@@ -450,6 +450,9 @@
     #embalaje .carousel-cell {
         width: 85%;
     }
+    #equiposHead {
+        margin-top: 0.5rem !important;
+    }
 }
 
 @media  screen and (max-width: 991px) {

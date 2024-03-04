@@ -17,6 +17,7 @@ const navFixed = document.getElementById("navFixed");
 
 respNav.style.display = "none";
 navFixed.style.display = "none";
+navFixed.style.width = width + "px";
 
 if (width >= 1024 && width < 1408) {
     mainNav.style.display = "none";
@@ -48,6 +49,7 @@ if (width <= 768) {
 
 function resize() {
     let width = window.innerWidth;
+    navFixed.style.width = width + "px";
     if (width >= 1024 && width < 1408) {
         mainNav.style.display = "none";
         respNav.style.display = ""
@@ -101,8 +103,7 @@ function getPosition( el ) {
 function scroll() {
     const scrollForFixedNav = navSec.offsetHeight + topContact.offsetHeight;
     if (window.scrollY >= scrollForFixedNav) {
-        console.log('puto')
-        navFixed.style.display = "block";
+        navFixed.style.display = "flex";
     } else {
         navFixed.style.display = "none";
     }
