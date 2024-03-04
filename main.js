@@ -1,4 +1,5 @@
 window.addEventListener("resize", resize);
+window.addEventListener("scroll", scroll);
 let width = window.innerWidth;
 
 const mainNav = document.getElementById("mainNav");
@@ -10,7 +11,12 @@ const mail = document.getElementById("mail");
 const mailMob = document.getElementById("mailMob");
 const cot = document.getElementById("cot");
 
+const topContact = document.getElementById('topContact');
+const navSec = document.getElementById("navSec");
+const navFixed = document.getElementById("navFixed");
+
 respNav.style.display = "none";
+navFixed.style.display = "none";
 
 if (width >= 1024 && width < 1408) {
     mainNav.style.display = "none";
@@ -79,4 +85,25 @@ function showMenu() {
     else {
         mainNav.style.display = "none";
     }  
+}
+
+function getPosition( el ) {
+    let x = 0;
+    let y = 0;
+    while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+    x += el.offsetLeft - el.scrollLeft;
+    y += el.offsetTop - el.scrollTop;
+    el = el.offsetParent;
+    }
+    return { top: y, left: x };
+}
+
+function scroll() {
+    const scrollForFixedNav = navSec.offsetHeight + topContact.offsetHeight;
+    if (window.scrollY >= scrollForFixedNav) {
+        console.log('puto')
+        navFixed.style.display = "block";
+    } else {
+        navFixed.style.display = "none";
+    }
 }

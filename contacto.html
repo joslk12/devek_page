@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Top -->
-    <div class="container">
+    <div id="topContact" class="container">
         <div class="level is-mobile pt-4 pb-4">
             <div class="level-left">
                 <div id="grupo" class="level-item">
@@ -54,7 +54,7 @@
     </div>
 
     <!-- Navigation -->
-    <section class="has-background-primary">
+    <section id="navSec" class="has-background-primary">
         <div class="container has-background-primary">
             <nav class="navbar has-background-primary " role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
@@ -92,8 +92,7 @@
                                 Contáctanos
                               </a>
                           </div>
-                          <a href="#" class="navbar-item has-text-white" style="font-size: 1.3rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
-                        </div>
+                          <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2rem !important;"><i class="fa-brands fa-whatsapp"></i></a>                        </div>
                     </div>
                     <div id="respNav" class="navbar-menu">
                         <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1rem;">
@@ -119,11 +118,28 @@
                                     Contáctanos
                                 </a>
                             </div>
-                            <a href="#" class="navbar-item has-text-white" style="font-size: 1.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
             </nav>
         </div>  
+    </section>
+    <section id="navFixed" class="has-background-primary" style="position: fixed; top: 0; z-index: 200; width: 100%;">
+        <div class="container has-background-primary">
+            <div class="level">
+                <div class="level-left"></div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1rem;">
+                            Contáctanos
+                        </a>
+                    </div>
+                    <div class="level-item">
+                        <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Cotizacion -->
@@ -133,7 +149,7 @@
                 <h1 class="has-text-white is-size-1 has-text-weight-bold has-text-centered is-italic">Devek®</h1>
                 <h1 class="has-text-white is-size-1 has-text-weight-bold has-text-centered is-italic">Protege lo que te importa.</h1>
                 <p class="has-text-white has-text-centered is-size-6 is-italic pt-5 pb-3">Protegemos y resguardamos tus productos a través de suministros de calidad y maquinaría durable y fácil de operar para eficientar tus procesos de empaque y embalaje.</p>
-                <br><br><br>
+                <br>
             </div>
         </div>
     </section>

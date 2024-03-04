@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Top -->
-    <div class="container">
+    <div id="topContact" class="container">
         <div class="level is-mobile pt-4 pb-4">
             <div class="level-left">
                 <div id="grupo" class="level-item">
@@ -53,7 +53,7 @@
     </div>
 
     <!-- Navigation -->
-    <section class="has-background-primary">
+    <section id="navSec" class="has-background-primary">
         <div class="container has-background-primary">
             <nav class="navbar has-background-primary " role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
@@ -91,8 +91,7 @@
                                 Contáctanos
                               </a>
                           </div>
-                          <a href="#" class="navbar-item has-text-white" style="font-size: 1.3rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
-                        </div>
+                          <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2rem !important;"><i class="fa-brands fa-whatsapp"></i></a>                        </div>
                     </div>
                     <div id="respNav" class="navbar-menu">
                         <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1rem;">
@@ -118,11 +117,28 @@
                                     Contáctanos
                                 </a>
                             </div>
-                            <a href="#" class="navbar-item has-text-white" style="font-size: 1.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
             </nav>
         </div>  
+    </section>
+    <section id="navFixed" class="has-background-primary" style="position: fixed; top: 0; z-index: 200; width: 100%;">
+        <div class="container has-background-primary">
+            <div class="level">
+                <div class="level-left"></div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1rem;">
+                            Contáctanos
+                        </a>
+                    </div>
+                    <div class="level-item">
+                        <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Banner -->
@@ -157,10 +173,10 @@
     <!-- Marcas -->
     <section class="has-background-gray">
         <div class="container" style="background: transparent;">
-            <div class="section">
+            <div class="section" style="padding-bottom: 0 !important;">
                 <p class="has-text-dark is-italic is-size-6 has-text-centered">Nuestras Marcas</p>
-                <p class="has-text-primary is-italic has-text-weight-bold is-size-1 has-text-centered">BIENVENIDOS A DEVEK®</p>
-                <p class="has-text-dark is-italic has-text-weight-bold is-size-3 has-text-centered">Más de 35 años dedicados a proteger lo que te importa.</p>
+                <p class="has-text-primary is-italic has-text-weight-bold is-size-1 has-text-centered">Bienvenidos a Devek®</p>
+                <p class="has-text-dark is-italic has-text-weight-bold is-size-4 has-text-centered">Más de 35 años dedicados a proteger lo que te importa.</p>
                 <div id="marcas" class="columns">
                     <div class="column" style="margin: auto;">
                         <figure class="image p-4">
@@ -213,7 +229,14 @@
 
     <!-- MATERIALES DE EMPAQUE -->
     <section class="section" style="background-color: transparent;">
-        <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4" style="border-bottom: 1px solid #a9a9a9;">MATERIALES DE EMPAQUE >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+        <div class="columns is-mobile" style="border-bottom: 1px solid #a9a9a9;">
+            <div class="column is-one-quarter" style="padding-bottom: 0;">
+                <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4">MATERIALES DE EMPAQUE ></p>
+            </div>
+            <div class="column" style="padding-bottom: 0;">
+                <p><a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+            </div>
+        </div>
         <div id="empaqueProduct" class="carousel" data-flickity='{ "contain": true, "groupCells": true }'>
             <div class="carousel-cell">
                 <div class="block">
@@ -350,7 +373,15 @@
 
     <!-- Equipos -->
     <section id="equipos" class="section" style="background-color: transparent;">
-        <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4 pt-6" style="border-bottom: 1px solid #a9a9a9; border-top: 1px solid #a9a9a9;">EQUIPOS Y ACCESORIOS DE EMPAQUE >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+        <!-- <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4 pt-6" style="border-bottom: 1px solid #a9a9a9; border-top: 1px solid #a9a9a9;">EQUIPOS Y ACCESORIOS DE EMPAQUE >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p> -->
+        <div class="columns is-mobile" style="border-bottom: 1px solid #a9a9a9;">
+            <div class="column is-one-quarter" style="padding-bottom: 0;">
+                <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4">EQUIPOS Y ACCESORIOS DE EMPAQUE ></p>
+            </div>
+            <div class="column" style="padding-bottom: 0;">
+                <p><a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+            </div>
+        </div>   
         <div id="equipoCar" class="carousel" data-flickity='{ "contain": true, "groupCells": true }'>
             <div class="carousel-cell">
                 <div class="block">
@@ -566,7 +597,15 @@
 
     <!-- Tendencia -->
     <section id="tendencia" class="section" style="background-color: transparent;">
-        <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4" style="border-bottom: 1px solid #a9a9a9;">PAPELERA Y FERRETERA >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+        <!-- <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4" style="border-bottom: 1px solid #a9a9a9;">PAPELERA Y FERRETERA >&nbsp;&nbsp;&nbsp;<a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p> -->
+        <div class="columns is-mobile" style="border-bottom: 1px solid #a9a9a9;">
+            <div class="column is-one-quarter" style="padding-bottom: 0;">
+                <p class="has-text-dark has-text-weight-bold is-size-6 is-italic pb-4">PAPELERA Y FERRETERA ></p>
+            </div>
+            <div class="column" style="padding-bottom: 0;">
+                <p><a class="has-text-primary has-text-weight-bold is-underlined is-size-6" href="#">Ver todo</a></p>
+            </div>
+        </div>
         <div id="tendencia" class="carousel" data-flickity='{ "contain": true, "groupCells": true }'>
             <div class="carousel-cell">
                 <div class="block">
@@ -781,8 +820,8 @@
         </div>
         <div id="enviosMex" class="column is-two-fifths has-background-blue">
             <div class="container" style="padding-top: 3.5rem; padding-bottom: 3.5rem; min-height: 300px;">
-                <div class="block pl-6 pt-4">
-                    <h1 class="has-text-white is-size-3 has-text-weight-bold is-italic is-uppercase pb-5">ENVÍOS A TODO MÉXICO</h1>
+                <div class="block pl-6">
+                    <h1 class="has-text-white is-size-3 has-text-weight-bold is-italic is-uppercase pb-5">SERVICIOS URGENTES</h1>
                     <p class="has-text-white is-size-6 is-italic pt-1"><i class="fa-solid fa-check"></i> Atención y seguimiento desde el primer minuto</p>
                     <p class="has-text-white is-size-6 is-italic pt-1"><i class="fa-solid fa-check"></i> Servicios urgentes a toda la República Mexicana</p>
                     <p class="has-text-white is-size-6 is-italic pt-1"><i class="fa-solid fa-check"></i> Entregas el mismo día en CDMX para productos de línea</p>
@@ -790,7 +829,7 @@
                 <div class="block pl-6">
                     <p class="has-text-white is-size-6 is-italic pt-5">*Las entregas a otros estados pueden variar dependiendo de la paquetería.</p>
                 </div>
-                <div class="block pl-6 pt-3 pb-6">
+                <div class="block pl-6 pt-3">
                     <a class="button has-background-primary has-text-white is-size-6 is-rounded has-text-weight-bold " style="border: none;" href="#">
                         Contáctanos
                     </a>
@@ -806,7 +845,7 @@
             <p class="has-text-dark has-text-centered is-italic is-size-6 pt-5">Nuestros suministros y equipos de empaque son tus fieles aliados para garantizar la integridad de tus productos.</p>
             <p class="has-text-dark has-text-centered is-italic is-size-6">Juntos, enfrentamos cualquier desafío, aseguramos la protección del producto y el éxito de tus procesos.</p>
         </div>
-        <div id="embalaje" class="carousel pt-5" data-flickity='{ "groupCells": 3 }'>
+        <div id="embalaje" class="carousel" data-flickity='{ "groupCells": 3 }'>
             <div class="carousel-cell">
                 <figure class="image">
                     <img src="./assets/Imagenes/Historia-01_Devek.png" alt="Historia-01_Devek.png">

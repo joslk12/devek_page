@@ -50,6 +50,15 @@
     text-underline-offset: .5rem;
     text-decoration-thickness: 2px;
 }
+
+#whatsapp-link .navbar-item:hover {
+    text-decoration: none !important;
+}
+
+#whatsapp-link:hover {
+    text-decoration: none !important;
+}
+
 .navbar-menu {
     background-color: transparent !important;
 }
@@ -125,7 +134,7 @@
   }
 
 #empaqueProduct .flickity-page-dots {
-    top: -35px;
+    top: -40px;
     padding-left: 90%;
     z-index: 1;
 }
@@ -159,7 +168,7 @@
 }
 
 #equipoCar .flickity-page-dots {
-    top: -35px;
+    top: -40px;
     padding-left: 90%;
     z-index: 1;
 }
@@ -193,7 +202,7 @@
 }
 
 #tendencia .flickity-page-dots {
-    top: -35px;
+    top: -40px;
     padding-left: 90%;
     z-index: 1;
 }
@@ -349,11 +358,11 @@
 }
 
 .division-subtitle {
-    height: 40px;
+    /* height: 40px; */
 }
 
 .division-content {
-    height: 125px;
+    /* height: 125px; */
 }
 
 .thanks {
