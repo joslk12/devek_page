@@ -42,6 +42,16 @@
     color: #a9a9a9 !important;;
 }
 
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .navbar-item:hover {
     background-color: transparent !important;
     border: none;
@@ -142,7 +152,7 @@
 } */
 
 #empaqueProduct .flickity-page-dots {
-    top: -40px;
+    top: -34px;
     padding-left: 90%;
     z-index: 1;
 }
@@ -176,7 +186,7 @@
 }
 
 #equipoCar .flickity-page-dots {
-    top: -40px;
+    top: -34px;
     padding-left: 90%;
     z-index: 1;
 }
@@ -210,7 +220,7 @@
 }
 
 #tendencia .flickity-page-dots {
-    top: -40px;
+    top: -34px;
     padding-left: 90%;
     z-index: 1;
 }
@@ -255,7 +265,7 @@
 #embalaje .carousel-cell {
     width: 25%;
     margin-right: 20px;
-    max-height: 400px;
+    max-height: 315px;
   }
 
 #embalaje .flickity-prev-next-button.next {
@@ -294,10 +304,10 @@
 }
   /* position outside */
 #catalogo .flickity-prev-next-button.previous {
-    left: -40px;
+    left: -34px;
 }
 #catalogo .flickity-prev-next-button.next {
-    right: -40px;
+    right: -34px;
 }
 
 #catalogo .flickity-button:disabled {
@@ -315,6 +325,7 @@
     font-weight: 600;
     font-style: italic;
     color: #292a2d;
+    font-size: 12px;
  }
  .input::placeholder {
     color: #292a2d !important;
@@ -331,6 +342,7 @@
     font-weight: 600;
     font-style: italic;
     color: #292a2d;
+    font-size: 12px;
  }
  .textarea::placeholder {
     color: #292a2d !important;
@@ -345,6 +357,7 @@
     border-bottom: 1px solid #a9a9a9;
     box-shadow: none !important;
     border-radius: 0px;
+    font-size: 12px;
  }
 
 .select select {
@@ -354,15 +367,16 @@
     font-weight: 600;
     font-style: italic;
     color: #292a2d;
+    font-size: 12px;
  }
 
  .product-name {
-    height: 45px;
+    height: 35px;
     overflow: hidden;
  }
 
  .division-title {
-    height: 85px;
+    height: 55px;
     margin-bottom: 0 !important;
 }
 
