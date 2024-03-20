@@ -185,6 +185,32 @@
     z-index: 50;
 }
 
+#equipoMenu .carousel-cell {
+    width: 12%;
+    margin-right: 10px;
+}
+
+#equipoMenu .carousel-cell:hover p{
+    text-decoration: underline;
+    text-decoration-thickness: 3px !important;
+    text-underline-offset: 0.25rem;
+    color:  #00a041;
+}
+
+#equipoMenu .image {
+    max-width: 175px;
+    margin: auto;
+}
+
+#equipoMenu .flickity-page-dots {
+    display: none;
+}
+
+#encintadoras .image {
+    max-width: 300px;
+    margin: auto;
+}
+
 #equipoCar .flickity-page-dots {
     top: -34px;
     padding-left: 90%;
