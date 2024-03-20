@@ -206,6 +206,10 @@
     display: none;
 }
 
+#equipoMenu .flickity-button:disabled {
+    display: block;
+}
+
 #encintadoras .image {
     max-width: 300px;
     margin: auto;
