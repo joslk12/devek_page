@@ -206,8 +206,13 @@
     display: none;
 }
 
+#equipoMenu .flickity-button {
+    background: white !important;
+}
+
 #equipoMenu .flickity-button:disabled {
-    display: block;
+    background: white !important;
+    opacity: unset !important;
 }
 
 #encintadoras .image {
@@ -420,6 +425,12 @@
 
 .thanks {
     background-image: url('./assets/Imagenes/imagen-thank-you-page_devek_web.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#formLeft {
+    background-image: url('./assets/Imagenes/Contacto_devek_web.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
