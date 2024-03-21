@@ -478,6 +478,11 @@
     font-size: 14px !important;
 } */
 
+#precintadoras .image {
+    max-width: 250px;
+    margin: auto;
+}
+
 @media screen and (max-width: 768px) {
     #equipoCar .flickity-page-dots {
         padding-left: 0;
