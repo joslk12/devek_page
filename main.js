@@ -18,7 +18,7 @@ const navFixed = document.getElementById("navFixed");
 // Equipos landing
 let equiposPages = 1;
 let equiposSize = 1;
-let equipos = null;
+let equiposArr = null;
 let currentPage = 1;
 let equiposPage = null;
 let assetFolder = '';
@@ -338,7 +338,7 @@ async function getNumberPages(elementsLength) {
 async function getEquiposPerPage(page) {
     const initialPos = page === 1 ? 0 : page * elementsPerPage - elementsPerPage;
     const finalPos = initialPos + elementsPerPage < equiposSize ? initialPos + elementsPerPage : equiposSize;
-    let equiposArray = equipos.slice(initialPos, finalPos);
+    let equiposArray = equiposArr.slice(initialPos, finalPos);
     const equiposLength = equiposArray.length;
     if (equiposLength <  elementsPerPage) {
       for (let index = 0; index < elementsPerPage; index++) {
@@ -356,7 +356,7 @@ async function setPages(pages) {
 }
 
 async function setEquipos(equiposToAssing) {
-    equipos = equiposToAssing;
+    equiposArr = equiposToAssing;
 }
 
 async function setEquiposCarousel() {
