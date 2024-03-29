@@ -215,6 +215,11 @@
     opacity: unset !important;
 }
 
+#equiposCarousel .image {
+    max-width: 250px;
+    margin: auto;
+}
+
 #encintadoras .image {
     max-width: 300px;
     margin: auto;
