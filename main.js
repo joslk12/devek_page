@@ -235,6 +235,69 @@ const MAQUINARIA = [
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
         img: '1. Devek Air.png'
     },
+    {
+        clasificacion: 'accesorios',
+        codigo: '50F1545',
+        nombre: 'Banda Transportadora Flexible Extendible 50F1545',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '1. Banda Transportadora Flexible Extendible 50F1545.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: '50B195',
+        nombre: 'Banda Transportadora de Rodillos Libres 50B195',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '2. Banda Transportadora de Rodillos Libres 50B195.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: 'Despachador de Escritorio',
+        nombre: 'Despachador de Escritorio',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '3. Despachador de Escritorio.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: 'Despachador de Cinta Gorila',
+        nombre: 'Despachador de Cinta Gorila',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '4. Despachador de Cinta Gorila.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: 'Aplicadores de Cinta de Empaque de Uso Ligero',
+        nombre: 'Aplicadores de Cinta de Empaque de Uso Ligero',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '5. Aplicadores de Cinta de Empaque de Uso Ligero.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: 'Aplicadores de Cinta de Empaque de Uso Rudo',
+        nombre: 'Aplicadores de Cinta de Empaque de Uso Rudo',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '6. Aplicadores de Cinta de Empaque de Uso Rudo.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: 'Aplicador de Película Strech',
+        nombre: 'Aplicador de Película Strech',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '7. Aplicador de Película Strech.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: 'Aplicador de Fleje Manual',
+        nombre: 'Aplicador de Fleje Manual',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '8. Aplicador de Fleje Manual.png'
+    },
+    {
+        clasificacion: 'accesorios',
+        codigo: 'Equipo de Flejado Manual',
+        nombre: 'Equipo de Flejado Manual',
+        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        img: '9. Equipo de Flejado Manual.png'
+    },
 ]
 
 respNav.style.display = "none";

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../assets/flickity.css">
-    <title>Encartonadoras</title>
+    <title>Accesorios</title>
 </head>
 <body>
     <!-- Top -->
@@ -238,7 +238,7 @@
 
     <!-- Equipos -->
     <section id="equiposCarousel" class="section" style="background-color: transparent;">
-        <p class="has-text-dark has-text-weight-bold is-size-7 is-italic pb-4" style="border-bottom: 1px solid #a9a9a9;">DEVEK > Maquinaria de Empaque > ENCARTONADORAS</p>
+        <p class="has-text-dark has-text-weight-bold is-size-7 is-italic pb-4" style="border-bottom: 1px solid #a9a9a9;">DEVEK > Maquinaria de Empaque > ACCESORIOS</p>
         <div class="container">
             <div class="columns">
                 <div class="column">
@@ -254,7 +254,7 @@
                         <p id="cardDesc1" class="has-text-centered has-text-dark is-italic is-size-7"></p>
                     </div>
                     <div class="block">
-                        <p id="cardLink1" class="has-text-centered"><a class="has-text-primary is-italic is-size-7" href="#">Ver más ></a></p>
+                        <p id="cardLink1" class="has-text-centered"><a  class="has-text-primary is-italic is-size-7" href="#">Ver más ></a></p>
                     </div>
                 </div>
                 <div class="column">
@@ -461,13 +461,13 @@
 
     <script>
         $(document).ready(async function(){
-            const encartonadoras = MAQUINARIA.filter(equipo => equipo.clasificacion == 'encartonadoras');
-            const maquinasLength = encartonadoras.length;
+            const accesorios = MAQUINARIA.filter(equipo => equipo.clasificacion == 'accesorios');
+            const maquinasLength = accesorios.length;
             const pages = await getNumberPages(maquinasLength);
             await setEquiposSize(maquinasLength);
             await setPages(pages);
-            await setAssetFolder('/assets/MaquinariaEmpaque/Encartonadoras/')
-            await setEquipos(encartonadoras);
+            await setAssetFolder('/assets/MaquinariaEmpaque/Accesorios/')
+            await setEquipos(accesorios);
             equiposPage = await getEquiposPerPage(currentPage);
             await setEquiposCarousel();
         });
