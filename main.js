@@ -95,7 +95,7 @@ const MAQUINARIA = [
     {
         clasificacion: 'encartonadoras',
         codigo: 'E15_E35',
-        nombre: 'Encartonadora E15_E35',
+        nombre: 'Encartonadora E15/E35',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
         img: '2. Encartonadora E15_E35.png'
     },
