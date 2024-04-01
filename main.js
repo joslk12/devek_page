@@ -45,6 +45,17 @@ const cardLink4 = document.getElementById('cardLink4');
 
 const elementsPerPage = 4;
 
+const MAQUINARIA_PAGES = [
+    'precintadoras',
+    'encartonadoras',
+    'envolvedoras',
+    'selladoras',
+    'tuneles',
+    'flejadoras',
+    'devekAir',
+    'accesorios'
+];
+
 const MAQUINARIA = [
     {  
         clasificacion: 'precintadoras',
@@ -502,13 +513,25 @@ async function setEquiposSize(size) {
 }
 
 async function nextPage() {
-    currentPage = currentPage < equiposPages ? currentPage + 1 : 1;
-    equiposPage = await getEquiposPerPage(currentPage);
-    await setEquiposCarousel();
+    const maquinariaIndex = window.location.href.lastIndexOf('/');
+    const htmlIndex = window.location.href.indexOf('.html');
+    const pagina = window.location.href.substring(maquinariaIndex + 1, htmlIndex);
+    const maquinariaPagesIndex = MAQUINARIA_PAGES.indexOf(pagina);
+    if (maquinariaPagesIndex == MAQUINARIA_PAGES.length - 1) {
+        window.location.href = MAQUINARIA_PAGES[0] + '.html';
+    } else {
+        window.location.href = MAQUINARIA_PAGES[maquinariaPagesIndex + 1] + '.html';
+    }
 }
   
 async function previousPage() {
-    currentPage = currentPage > 1 ? currentPage - 1 : equiposPages;
-    equiposPage = await getEquiposPerPage(currentPage);
-    await setEquiposCarousel();
+    const maquinariaIndex = window.location.href.lastIndexOf('/');
+    const htmlIndex = window.location.href.indexOf('.html');
+    const pagina = window.location.href.substring(maquinariaIndex + 1, htmlIndex);
+    const maquinariaPagesIndex = MAQUINARIA_PAGES.indexOf(pagina);
+    if (maquinariaPagesIndex == 0) {
+        window.location.href = MAQUINARIA_PAGES[MAQUINARIA_PAGES.length - 1] + '.html';
+    } else {
+        window.location.href = MAQUINARIA_PAGES[maquinariaPagesIndex - 1] + '.html';
+    }
 }
