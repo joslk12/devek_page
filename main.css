@@ -435,9 +435,10 @@
 }
 
 #formLeft {
-    background-image: url('./assets/Imagenes/Contacto_devek_web.png');
+    /* background-image: url('./assets/Imagenes/Contacto_devek_web.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background: #004080 !important;
 }
 
 .button {
