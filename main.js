@@ -534,6 +534,9 @@ async function nextPage() {
     if(window.location.href.includes('ProductosDeEmpaque')){
         productoPages = PRODUCTOS_EMPAQUE_PAGES;
     }
+    if(window.location.href.includes('PapeleraYFerretera')){
+        productoPages = PAPELERA_FERRETERA_PAGES;
+    }
     const productoIndex = window.location.href.lastIndexOf('/');
     const htmlIndex = window.location.href.indexOf('.html');
     const pagina = window.location.href.substring(productoIndex + 1, htmlIndex);
@@ -552,6 +555,9 @@ async function previousPage() {
     }
     if(window.location.href.includes('ProductosDeEmpaque')){
         productoPages = PRODUCTOS_EMPAQUE_PAGES;
+    }
+    if(window.location.href.includes('PapeleraYFerretera')){
+        productoPages = PAPELERA_FERRETERA_PAGES;
     }
     const productoIndex = window.location.href.lastIndexOf('/');
     const htmlIndex = window.location.href.indexOf('.html');
