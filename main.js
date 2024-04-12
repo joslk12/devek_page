@@ -56,6 +56,20 @@ const MAQUINARIA_PAGES = [
     'accesorios'
 ];
 
+const PRODUCTOS_EMPAQUE_PAGES = [
+    'cintasEmpaque',
+    'cintasEspecialidad',
+    'peliculas',
+    'flejes',
+    'poliburbuja'
+]
+
+const PAPELERA_FERRETERA_PAGES = [
+    'cintasAdhesivas',
+    'articulosPapeleria',
+    'Flejes'
+]
+
 const MAQUINARIA = [
     {  
         clasificacion: 'precintadoras',
@@ -95,7 +109,7 @@ const MAQUINARIA = [
     {
         clasificacion: 'encartonadoras',
         codigo: 'E15_E35',
-        nombre: 'Encartonadora E15/E35',
+        nombre: 'Encartonadora E15 / E35',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
         img: '2. Encartonadora E15_E35.png'
     },
@@ -513,25 +527,39 @@ async function setEquiposSize(size) {
 }
 
 async function nextPage() {
-    const maquinariaIndex = window.location.href.lastIndexOf('/');
+    let productoPages = [];
+    if(window.location.href.includes('MaquinariaDeEmpaque')){
+        productoPages = MAQUINARIA_PAGES;
+    }
+    if(window.location.href.includes('ProductosDeEmpaque')){
+        productoPages = PRODUCTOS_EMPAQUE_PAGES;
+    }
+    const productoIndex = window.location.href.lastIndexOf('/');
     const htmlIndex = window.location.href.indexOf('.html');
-    const pagina = window.location.href.substring(maquinariaIndex + 1, htmlIndex);
-    const maquinariaPagesIndex = MAQUINARIA_PAGES.indexOf(pagina);
-    if (maquinariaPagesIndex == MAQUINARIA_PAGES.length - 1) {
-        window.location.href = MAQUINARIA_PAGES[0] + '.html';
+    const pagina = window.location.href.substring(productoIndex + 1, htmlIndex);
+    const productoPagesIndex = productoPages.indexOf(pagina);
+    if (productoPagesIndex == productoPages.length - 1) {
+        window.location.href = productoPages[0] + '.html';
     } else {
-        window.location.href = MAQUINARIA_PAGES[maquinariaPagesIndex + 1] + '.html';
+        window.location.href = productoPages[productoPagesIndex + 1] + '.html';
     }
 }
   
 async function previousPage() {
-    const maquinariaIndex = window.location.href.lastIndexOf('/');
+    let productoPages = [];
+    if(window.location.href.includes('MaquinariaDeEmpaque')){
+        productoPages = MAQUINARIA_PAGES;
+    }
+    if(window.location.href.includes('ProductosDeEmpaque')){
+        productoPages = PRODUCTOS_EMPAQUE_PAGES;
+    }
+    const productoIndex = window.location.href.lastIndexOf('/');
     const htmlIndex = window.location.href.indexOf('.html');
-    const pagina = window.location.href.substring(maquinariaIndex + 1, htmlIndex);
-    const maquinariaPagesIndex = MAQUINARIA_PAGES.indexOf(pagina);
-    if (maquinariaPagesIndex == 0) {
-        window.location.href = MAQUINARIA_PAGES[MAQUINARIA_PAGES.length - 1] + '.html';
+    const pagina = window.location.href.substring(productoIndex + 1, htmlIndex);
+    const productoPagesIndex = productoPages.indexOf(pagina);
+    if (productoPagesIndex == 0) {
+        window.location.href = productoPages[productoPages.length - 1] + '.html';
     } else {
-        window.location.href = MAQUINARIA_PAGES[maquinariaPagesIndex - 1] + '.html';
+        window.location.href = productoPages[productoPagesIndex - 1] + '.html';
     }
 }
