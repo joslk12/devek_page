@@ -354,6 +354,14 @@
     display: none;
 }
 
+.charlist {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.charlist::marker {
+    color: #00a041;
+}
+
 .input  {
     border-top: none !important;
     border-left: none !important;

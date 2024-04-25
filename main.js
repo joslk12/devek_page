@@ -74,7 +74,7 @@ const MAQUINARIA = [
     {  
         clasificacion: 'precintadoras',
         codigo: 'BL-220A',
-        nombre: 'Precintadora Monoformato BL-220A',
+        nombre: 'Precintadora Automática BL-220A',
         cardDesc: 'Hasta 25 cajas por minuto con un peso menor a 16 Kg.',
         img: '1. Precintadora Monoformato BL-220A.png',
     },
@@ -88,7 +88,7 @@ const MAQUINARIA = [
     {
         clasificacion: 'precintadoras',
         codigo: 'BL-220Z',
-        nombre: 'Precintadora Monoformato BL-220Z',
+        nombre: 'Precintadora Multiformato BL-220Z',
         cardDesc: 'Hasta 20 cajas por minuto con un peso mayor a 18 kg y menor a 25 kg.',
         img: '3. Precintadora Monoformato BL-220Z.png'
     },
