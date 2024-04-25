@@ -448,7 +448,7 @@ async function setEquipos(equiposToAssing) {
 }
 
 async function setEquiposCarousel() {
-    if (JSON.stringify(equiposPage[0]) != '{}') {
+    if (JSON.stringify(equiposPage[0]) != '{}' && cardImg1) {
         cardImg1.style.display = '';
         cardName1.style.display = '';
         cardDesc1.style.display = '';
@@ -460,12 +460,14 @@ async function setEquiposCarousel() {
     }
     else
     {
-        cardImg1.style.display = 'none';
-        cardName1.style.display = 'none';
-        cardDesc1.style.display = 'none';
-        cardLink1.style.display = 'none';
+        if(cardImg1){
+            cardImg1.style.display = 'none';
+            cardName1.style.display = 'none';
+            cardDesc1.style.display = 'none';
+            cardLink1.style.display = 'none';
+        }
     }
-    if (JSON.stringify(equiposPage[1]) != '{}') {
+    if (JSON.stringify(equiposPage[1]) != '{}' && cardImg2) {
         cardImg2.style.display = '';
         cardName2.style.display = '';
         cardDesc2.style.display = '';
@@ -477,12 +479,14 @@ async function setEquiposCarousel() {
     }
     else
     {
-        cardImg2.style.display = 'none';
-        cardName2.style.display = 'none';
-        cardDesc2.style.display = 'none';
-        cardLink2.style.display = 'none';
+        if(cardImg2){
+            cardImg2.style.display = 'none';
+            cardName2.style.display = 'none';
+            cardDesc2.style.display = 'none';
+            cardLink2.style.display = 'none';
+        }
     }
-    if (JSON.stringify(equiposPage[2]) != '{}') {
+    if (JSON.stringify(equiposPage[2]) != '{}' && cardImg3) {
         cardImg3.style.display = '';
         cardName3.style.display = '';
         cardDesc3.style.display = '';
@@ -494,12 +498,14 @@ async function setEquiposCarousel() {
     }
     else
     {
-        cardImg3.style.display = 'none';
-        cardName3.style.display = 'none';
-        cardDesc3.style.display = 'none';
-        cardLink3.style.display = 'none';
+        if(cardImg3){
+            cardImg3.style.display = 'none';
+            cardName3.style.display = 'none';
+            cardDesc3.style.display = 'none';
+            cardLink3.style.display = 'none';
+        }
     }
-    if (JSON.stringify(equiposPage[3]) != '{}') {
+    if (JSON.stringify(equiposPage[3]) != '{}' && cardImg4) {
         cardImg4.style.display = '';
         cardName4.style.display = '';
         cardDesc4.style.display = '';
@@ -511,10 +517,12 @@ async function setEquiposCarousel() {
     }
     else
     {
-        cardImg4.style.display = 'none';
-        cardName4.style.display = 'none';
-        cardDesc4.style.display = 'none';
-        cardLink4.style.display = 'none';
+        if(cardImg4) {
+            cardImg4.style.display = 'none';
+            cardName4.style.display = 'none';
+            cardDesc4.style.display = 'none';
+            cardLink4.style.display = 'none';
+        }
     }
 }
 
