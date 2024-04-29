@@ -237,12 +237,18 @@
                 </p>
             </div>
             <div class="column has-text-right is-4">
-                <iconify-icon class="is-size-2" icon="system-uicons:chevron-left-circle"  style="color: #292a2d"></iconify-icon>
-                <iconify-icon class="is-size-2" icon="system-uicons:chevron-right-circle"  style="color: #292a2d"></iconify-icon>
+                <div class="level-right">
+                    <div class="is-size-4 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 2.2rem; height: 2.2rem;   box-shadow: -1px 1px #f5f5f7;">
+                        <i class="fa-solid fa-chevron-left" style="padding-right: 29%;"></i>
+                    </div>
+                    <div class="is-size-4 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 2.2rem; height: 2.2rem;   box-shadow: 1px 1px #f5f5f7;">
+                        <i class="fa-solid fa-chevron-right" style="padding-right: 29%;"></i>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="columns">
-            <div class="column">
+            <div class="column mr-3">
                 <div class="columns is-mobile">
                     <div class="column is-1">
                         <div class="block">
@@ -280,16 +286,21 @@
                         <div>
                             <figure class="image" id="imageContainer">
                                 <img id="expandedImg" style="margin: auto;">
-                                <div style="position: absolute; bottom: 0; right: 10px;">
-                                    <iconify-icon class="is-size-3" icon="system-uicons:chevron-left-circle"  style="color: #292a2d" onclick="prevImage()"></iconify-icon>
-                                    <iconify-icon class="is-size-3" icon="system-uicons:chevron-right-circle"  style="color: #292a2d" onclick="nextImage()"></iconify-icon>
+                                <div class="level-right" style="position: absolute; bottom: 2px; right: 2px">
+                                    <div class="is-size-4 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 2.2rem; height: 2.2rem;   box-shadow: -1px 1px #f5f5f7;" onclick="prevImage()">
+                                        <i class="fa-solid fa-chevron-left" style="padding-left: 29%;"></i>
+                                    </div>
+                                    <div style="margin-left: 2px; margin-right: 2px;"></div>
+                                    <div class="is-size-4 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 2.2rem; height: 2.2rem;   box-shadow: 1px 1px #f5f5f7;" onclick="nextImage()">
+                                        <i class="fa-solid fa-chevron-right" style="padding-left: 29%;"></i>
+                                    </div>
                                 </div>
                             </figure>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column ml-3">
                 <div id="productDesc">
                     <h1 class="has-text-dark is-size-4 has-text-weight-bold is-italic">
                         Precintadora Automática BL-220A
@@ -338,19 +349,31 @@
                             <strong>Máquinas para Medidas de Caja Especial:</strong> Disponibles bajo pedido para adaptarse a necesidades específicas.
                         </li>
                     </ul>
-                    <div class="block pt-6">
-                        <div class="columns is-mobile" style="border-top: solid 1px #292a2d; border-bottom: solid 1px #292a2d;">
+                    <div class="block pt-6 pb-3" style="border-bottom: solid 1px #292a2d;">
+                        <div class="columns is-mobile" style="border-top: solid 1px #292a2d;" onclick="displayInsta()">
                             <div class="column">
-                                <p class="has-text-dark pt-3 pb-3 is-size-7 is-italic has-text-weight-bold">
+                                <p class="has-text-dark pt-3 is-size-7 is-italic has-text-weight-bold">
                                     Instalación rápida y operación inmediata
                                 </p>
                             </div>
                             <div class="column">
-                                <p class="has-text-dark has-text-right pt-3 pb-3 is-size-7 is-italic has-text-weight-bold">
+                                <p id="displayInstalacion" class="has-text-dark has-text-right pt-3 is-size-7 is-italic has-text-weight-bold">
                                     <iconify-icon class="is-size-6 has-text-right" icon="icon-park:down"></iconify-icon>
+                                </p>
+                                <p id="hideInstalacion" class="has-text-dark has-text-right pt-3 is-size-7 is-italic has-text-weight-bold" style="display: none;">
+                                    <iconify-icon class="is-size-6 has-text-right" icon="icon-park:up"></iconify-icon>
                                 </p>
                             </div>
                         </div>
+
+                        <p id="instalacion" class="has-text-darkpt-3 is-size-7 is-italic" style="display: none;">
+                            Nos encargamos de la instalación según tus necesidades, dejando el equipo
+                            completamente preparado para su operatividad. Además, proporcionamos un
+                            sólido servicio técnico que incluye disponibilidad inmediata de refacciones,
+                            servicio técnico y opción de contratación de la póliza de mantenimiento para
+                            asegurar un funcionamiento continuo y sin contratiempos
+                        </p>
+
                     </div>
                     <div class="block pt-6">
                         <a class="button has-background-primary has-text-white is-size-7 is-rounded has-text-weight-bold" href="#contacto">
@@ -364,7 +387,7 @@
 
     <section class="section mt-6">
         <div class="columns is-mobile" style="border-top: 1px solid #a9a9a9;">
-            <div class="column">
+            <div class="column mr-3">
                 <p class="has-text-weight-bold has-text-dark is-size-7 pb-6 is-italic">
                     Equipo en acción
                 </p>
@@ -372,7 +395,7 @@
                     Descubra la eficacia y versatilidad de la Precintadora de cajas Automática BL-220A. Con su capacidad para adaptarse a diferentes tamaños de cajas y su diseño compacto, esta máquina ofrece un sellado perfecto en líneas de producción estándar. Optimice sus procesos de empaque con una solución confiable y eficiente que requiere poco mantenimiento y ofrece resultados consistentes. Haz el cambio ahora, realiza una prueba. ¡Habla con uno de nuestros consultores!
                 </p>
             </div>
-            <div class="column">
+            <div class="column ml-3">
                 <div class="block">
                     <figure class="image">
                         <img src="../../assets/MaquinariaEmpaque/Precintadoras/BL-220A/7. Precintadora Monoformato BL-220A - Sellado de Cajas.png" alt="7. Precintadora Monoformato BL-220A - Sellado de Cajas.png">
@@ -469,7 +492,7 @@
                     <div class="control">
                         <div class="select is-dark">
                             <select multiple="multiple" data-single="true" placeholder="¿Cómo podemos ayudarte?">
-                                <option value="Necesito acesoría de un colsultor">Necesito acesoría de un colsultor</option>
+                                <option value="Necesito asesoría de un consultor">Necesito asesoría de un consultor</option>
                                 <option value="Programar una visita a mi planta">Programar una visita a mi planta</option>
                                 <option value="Obtener una demostración del equipo">Obtener una demostración del equipo</option>
                                 <option value="Programar el envío de mis muestras para hacer una prueba">Programar el envío de mis muestras para hacer una prueba</option>
@@ -538,17 +561,17 @@
                         </figure>
                     </div>
                     <div class="block product-name">
-                        <p id="cardName1" class="has-text-dark has-text-weight-bold is-italic is-size-7 is-capitalized has-text-centered">
+                        <p id="" class="has-text-dark has-text-weight-bold is-italic is-size-7 is-capitalized has-text-centered">
                             Precintadora Monoformato DT-420A
                         </p>
                     </div>
                     <div class="block">
-                        <p id="cardDesc1" class="has-text-centered has-text-dark is-italic is-size-7">
+                        <p id="" class="has-text-centered has-text-dark is-italic is-size-7">
                             Hasta 25 cajas por minuto con peso mayor a 18 Kg.
                         </p>
                     </div>
                     <div class="block">
-                        <p id="cardLink1" class="has-text-centered">
+                        <p id="" class="has-text-centered">
                             <a class="has-text-primary is-italic is-size-7" href="./DT-420A.html">Ver más ></a>
                         </p>
                     </div>
@@ -560,17 +583,17 @@
                         </figure>
                     </div>
                     <div class="block product-name">
-                        <p id="cardName1" class="has-text-dark has-text-weight-bold is-italic is-size-7 is-capitalized has-text-centered">
+                        <p id="" class="has-text-dark has-text-weight-bold is-italic is-size-7 is-capitalized has-text-centered">
                             Precintadora Monoformato BL-220Z
                         </p>
                     </div>
                     <div class="block">
-                        <p id="cardDesc1" class="has-text-centered has-text-dark is-italic is-size-7">
+                        <p id="" class="has-text-centered has-text-dark is-italic is-size-7">
                             Hasta 20 cajas por minuto con un peso mayor a 18 kg y menor a 25 kg.
                         </p>
                     </div>
                     <div class="block">
-                        <p id="cardLink1" class="has-text-centered">
+                        <p id="" class="has-text-centered">
                             <a class="has-text-primary is-italic is-size-7" href="./BL-220Z.html">Ver más ></a>
                         </p>
                     </div>
@@ -582,17 +605,17 @@
                         </figure>
                     </div>
                     <div class="block product-name">
-                        <p id="cardName1" class="has-text-dark has-text-weight-bold is-italic is-size-7 is-capitalized has-text-centered">
+                        <p id="" class="has-text-dark has-text-weight-bold is-italic is-size-7 is-capitalized has-text-centered">
                             Precintadora Monoformato Automática BL-220T
                         </p>
                     </div>
                     <div class="block">
-                        <p id="cardDesc1" class="has-text-centered has-text-dark is-italic is-size-7">
+                        <p id="" class="has-text-centered has-text-dark is-italic is-size-7">
                             Hasta 25 cajas por minuto con un peso mayor a 18 kg y menor a 25 kg.
                         </p>
                     </div>
                     <div class="block">
-                        <p id="cardLink1" class="has-text-centered">
+                        <p id="" class="has-text-centered">
                             <a class="has-text-primary is-italic is-size-7" href="./BL-220T.html">Ver más ></a>
                         </p>
                     </div>
@@ -749,6 +772,9 @@
         const expandImg = document.getElementById("expandedImg");
         const imageContainer = document.getElementById("imageContainer");
         const productDesc = document.getElementById("productDesc");
+        const displayInstalacion = document.getElementById("displayInstalacion");
+        const hideInstalacion = document.getElementById("hideInstalacion");
+        const instalacion = document.getElementById("instalacion");
         const imagenes = [
             '1. Precintadora Monoformato BL-220A.png',
             '2. Precintadora Monoformato BL-220A - Medidas.png',
@@ -763,7 +789,7 @@
 
         let size = expandImg.getBoundingClientRect();
         let height = size.height;
-        imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
+        // imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
         productDesc.style = 'height: ' + height + 'px !important; margin: auto; display: block; overflow-y: scroll; overflow-x: clip;';
 
         $(document).ready(async function(){
@@ -777,7 +803,7 @@
             equiposPage = await getEquiposPerPage(currentPage);
             await setEquiposCarousel();
 
-            imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
+            // imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
             productDesc.style = 'height: ' + height + 'px !important; margin: auto; display: block; overflow-y: scroll; overflow-x: clip;';
         });
 
@@ -814,8 +840,20 @@
         function resize() {
             let size = expandImg.getBoundingClientRect();
             let height = size.height;
-            imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
+            // imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
             productDesc = 'height: ' + height + 'px !important; margin: auto; display: block: overflow-y: scroll';
+        }
+
+        function displayInsta() {
+            if (displayInstalacion.style.display != 'none') {
+                displayInstalacion.style.display = 'none';
+                hideInstalacion.style.display = 'block';
+                instalacion.style.display = 'block';
+            } else {
+                displayInstalacion.style.display = 'block';
+                hideInstalacion.style.display = 'none';
+                instalacion.style.display = 'none';
+            }
         }
     </script>
     <script>

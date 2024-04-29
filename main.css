@@ -220,6 +220,16 @@
     margin: auto;
 }
 
+#tunelesCarousel .image {
+    max-width: 185px;
+    margin: auto;
+}
+
+#tunelesCarousel .carousel-cell {
+    width: 25%;
+    margin-right: 10px;
+}
+
 #encintadoras .image {
     max-width: 300px;
     margin: auto;
