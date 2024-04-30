@@ -264,28 +264,28 @@ const MAQUINARIA = [
         clasificacion: 'accesorios',
         codigo: '50F1545',
         nombre: 'Banda Transportadora Flexible Extendible 50F1545',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Agiliza y simplifica el proceso de manejo de cargas',
         img: '1. Banda Transportadora Flexible Extendible 50F1545.png'
     },
     {
         clasificacion: 'accesorios',
         codigo: '50B195',
         nombre: 'Banda Transportadora de Rodillos Libres 50B195',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Optimiza el manejo de los productos.',
         img: '2. Banda Transportadora de Rodillos Libres 50B195.png'
     },
     {
         clasificacion: 'accesorios',
         codigo: 'Despachador de Escritorio',
         nombre: 'Despachador de Escritorio',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Aplica la cinta de forma precisa y profesional.',
         img: '3. Despachador de Escritorio.png'
     },
     {
         clasificacion: 'accesorios',
         codigo: 'Despachador de Cinta Gorila',
         nombre: 'Despachador de Cinta Gorila',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Cierra las cajas de manera rápida y eficaz',
         img: '4. Despachador de Cinta Gorila.png'
     },
     {
