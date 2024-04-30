@@ -230,6 +230,10 @@
     margin-right: 10px;
 }
 
+#tunelesCarousel .flickity-page-dots {
+    display: none;
+}
+
 #encintadoras .image {
     max-width: 300px;
     margin: auto;
@@ -369,6 +373,15 @@
     list-style-position: inside;
 }
 .charlist::marker {
+    color: #00a041;
+}
+
+.charlist-sec {
+    margin-left: 15px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.charlist-sec::marker {
     color: #00a041;
 }
 

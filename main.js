@@ -131,21 +131,21 @@ const MAQUINARIA = [
         clasificacion: 'flejadoras',
         codigo: 'BA20',
         nombre: 'Flejadora Semiautomática Básica BA20',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Asegura la estabilidad de tus paquetes durante el proceso de embalaje.',
         img: '1. Flejadora Semiautomática Básica BA20.png'
     },
     {
         clasificacion: 'flejadoras',
         codigo: 'PL20',
         nombre: 'Flejadora Semiautomática Plus PL20',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Mejora la eficiencia en el embalaje de tus productos con la Flejadora Semiautomática Plus PL20.',
         img: '2. Flejadora Semiautomática Plus PL20.png'
     },
     {
         clasificacion: 'flejadoras',
         codigo: '995',
         nombre: 'Flejadora Automática 995',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Automatizar el proceso de flejado y gana rápidez y eficiencia.',
         img: '3. Flejadora Automática 995.png'
     },
     {
@@ -257,7 +257,7 @@ const MAQUINARIA = [
         clasificacion: 'devekAir',
         codigo: 'DevekAir',
         nombre: 'Devek Air',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Produce bolsas inflables que protegen los productos',
         img: '1. Devek Air.png'
     },
     {
