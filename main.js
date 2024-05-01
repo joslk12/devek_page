@@ -103,28 +103,28 @@ const MAQUINARIA = [
         clasificacion: 'encartonadoras',
         codigo: 'E9',
         nombre: 'Encartonadora E9',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Forma cajas de cartón de manera rápida y eficiente',
         img: '1. Encartonadora E9.png'
     },
     {
         clasificacion: 'encartonadoras',
         codigo: 'E15_E35',
         nombre: 'Encartonadora E15 / E35',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Automatiza el proceso de formado y sellado de cajas de diferentes tamaños',
         img: '2. Encartonadora E15_E35.png'
     },
     {
         clasificacion: 'envolvedoras',
         codigo: '2000',
         nombre: 'Envolvedora 2000',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Envuelve tarimas de manera eficiente, proporcionando una cobertura uniforme y segura.',
         img: '1. Envolvedora 2000.png'
     },
     {
         clasificacion: 'envolvedoras',
         codigo: '2000A',
         nombre: 'Envolvedora 2000A',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Envuelve pallets o tarimas con películas de plástico',
         img: '2. Envolvedora 2000A.png'
     },
     {
