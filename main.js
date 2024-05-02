@@ -75,28 +75,28 @@ const MAQUINARIA = [
         clasificacion: 'precintadoras',
         codigo: 'BL-220A',
         nombre: 'Precintadora Automática BL-220A',
-        cardDesc: 'Hasta 25 cajas por minuto con un peso menor a 16 Kg.',
+        cardDesc: 'Encintado superior e inferior de las cajas de cartón',
         img: '1. Precintadora Monoformato BL-220A.png',
     },
     {
         clasificacion: 'precintadoras',
         codigo: 'DT-420A',
         nombre: 'Precintadora Monoformato DT-420A',
-        cardDesc: 'Hasta 25 cajas por minuto con peso mayor a 18 Kg.',
+        cardDesc: 'Encintado superior e inferior de las cajas de cartón',
         img: '2. Precintadora Monoformato DT-420A.png'
     },
     {
         clasificacion: 'precintadoras',
         codigo: 'BL-220Z',
         nombre: 'Precintadora Multiformato BL-220Z',
-        cardDesc: 'Hasta 20 cajas por minuto con un peso mayor a 18 kg y menor a 25 kg.',
+        cardDesc: 'Encintado superior e inferior y ajuste automático al tamaño de las cajas.',
         img: '3. Precintadora Monoformato BL-220Z.png'
     },
     {
         clasificacion: 'precintadoras',
         codigo: 'BL-220T',
         nombre: 'Precintadora Monoformato Automática BL-220T',
-        cardDesc: 'Hasta 25 cajas por minuto con un peso mayor a 18 kg y menor a 25 kg.',
+        cardDesc: 'Cierre de solapas automático con encintado superior e inferior de las cajas.',
         img: '4. Precintadora Monoformato Automática BL-220T.png'
     },
     {
@@ -152,28 +152,28 @@ const MAQUINARIA = [
         clasificacion: 'selladoras',
         codigo: 'YSD5540',
         nombre: 'Selladomo YSD5540',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Sellado eficiente y termoretracción para una variedad de productos',
         img: '1. Selladomo YSD5540.png'
     },
     {
         clasificacion: 'selladoras',
         codigo: '34C',
         nombre: 'Selladora Semiautomática 34C',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Ayuda a proteger el producto contra la contaminación y agentes externos',
         img: '2. Selladora Semiautomática 34C.png'
     },
     {
         clasificacion: 'selladoras',
         codigo: 'SF6451-S',
         nombre: 'Selladora Automática SF6451-S',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Optimiza el proceso de embalaje al ofrecer un sellado preciso y automatizado',
         img: '3. Selladora Automática  SF6451-S.png'
     },
     {
         clasificacion: 'selladoras',
         codigo: 'YSL5045',
         nombre: 'Selladora Semiautomática YSL5045',
-        cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
+        cardDesc: 'Sellado en L en una variedad de productos envasados',
         img: '4. Selladora Semiautomática YSL5045.png'
     },
     {
