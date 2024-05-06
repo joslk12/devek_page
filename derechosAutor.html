@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.7.0/dist/multiple-select.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./assets/flickity.css">
+    <title>Política de Derechos de Autor y Propiedad Intelectual</title>
+</head>
+<body>
+    <!-- Top -->
+    <div id="topContact" class="container">
+        <div class="level is-mobile pt-4 pb-4">
+            <div class="level-left">
+                <div id="grupo" class="level-item">
+                    <p class="is-size-7 has-text-dark is-italic has-text-weight-bold">
+                        Grupo Mexicano Imperial
+                    </p>
+                </div>
+            </div>
+            <div class="level-right">
+                <div class="level-item">
+                    <p class="is-size-7 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                        <a id="tel" class="has-text-dark" href="tel:+525541654165"><i class="fa-solid fa-phone"></i> (55) 4165-4165</a>
+                        <a id="telMob" class="has-text-dark" href="tel:+525541654165"><i class="fa-solid fa-phone"></i></a>
+                    </p>
+                </div>
+                <div class="level-item">
+                    <p class="is-size-7 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                        <a id="mail" class="has-text-dark" href="mailto:ventas@devek.com.mx"><i class="fa-solid fa-envelope"></i> ventas@devek.com.mx</a>
+                        <a id="mailMob" class="has-text-dark" href="mailto:ventas@devek.com.mx"><i class="fa-solid fa-envelope"></i></a>
+                    </p>
+                </div>
+                <div id="cot" class="level-item">
+                    <p class="is-size-7 has-text-dark is-italic has-text-weight-bold pl-2 pr-2">
+                        <i class="fa-solid fa-check"></i> Cotizaciones
+                    </p>
+                </div>
+                <div class="level-item">
+                    <div class="is-size-6 has-text-white has-text-weight-bold has-background-primary" style="border-radius: 50%; width: 2.5rem; height: 2.5rem;">
+                        <i class="fa-brands fa-linkedin-in" style="padding-top: 30%; padding-left: 33%;"></i>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div class="is-size-6 has-text-white has-text-weight-bold has-background-primary" style="border-radius: 50%; width: 2.5rem; height: 2.5rem;">
+                        <i class="fa-brands fa-youtube" style="padding-top: 31%; padding-left: 27%;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <section id="navSec" class="has-background-primary">
+        <div class="container has-background-primary">
+            <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="./assets/Logos/Devek_logo-principal.png" alt="Devek_logo-principal.png" style="max-width: 180px; height: auto; max-height: fit-content;">
+                        </a>
+                    
+                        <a role="button" onclick="showMenu()" class="navbar-burger has-text-white has-text-weight-bold" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="mainNav" class="navbar-menu">
+                        <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1rem;">
+                          <a class="navbar-item has-text-white" href="empaque.html">
+                            Productos de Empaque
+                          </a>
+                    
+                          <a class="navbar-item has-text-white" href="maquinaria.html">
+                            Maquinaria de Empaque
+                          </a>
+
+                          <a class="navbar-item has-text-white" href="papelera.html">
+                            Papelera y Ferretera
+                          </a>
+                          
+                          <a class="navbar-item has-text-white" href="servicio.html">
+                            Servicio Técnico
+                          </a>
+
+                          <div class="navbar-item">
+                            <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1rem;">
+                                Contáctanos
+                              </a>
+                          </div>
+                          <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2rem !important;"><i class="fa-brands fa-whatsapp"></i></a>                        </div>
+                    </div>
+                    <div id="respNav" class="navbar-menu">
+                        <div class="navbar-end has-text-white has-text-weight-bold is-italic" style="font-size: 1rem;">
+                            <div class="navbar-item has-dropdown has-text-white has-text-weight-bold is-italic is-hoverable">
+                                <a class="navbar-link has-text-white is-arrowless">
+                                  Productos
+                                </a>
+                        
+                                <div class="navbar-dropdown has-background-primary has-text-white" style="font-size: 1rem;">
+                                  <a class="navbar-item has-text-white" href="empaque.html">
+                                    Productos de Empaque
+                                  </a>
+                                  <a class="navbar-item has-text-white" href="maquinaria.html">
+                                    Maquinaria de Empaque
+                                  </a>
+                                  <a class="navbar-item has-text-white" href="papelera.html">
+                                    Papelera y Ferretera
+                                  </a>
+                              </div>
+                            </div>
+                            <div class="navbar-item">
+                                <a class="button has-background-primary has-text-white is-rounded" href="contacto.html" style="border: 2px solid white; font-size: 1rem;">
+                                    Contáctanos
+                                </a>
+                            </div>
+                            <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+            </nav>
+        </div>  
+    </section>
+    <section id="navFixed" class="has-background-primary" style="position: fixed; top: 0; z-index: 200; width: 100%;">
+        <div class="container has-background-primary">
+            <div class="level is-mobile">
+                <div class="level-left"></div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <a class="button has-background-primary has-text-white is-rounded has-text-weight-bold is-italic" href="contacto.html" style="border: 2px solid white; font-size: 1rem;">
+                            Contáctanos
+                        </a>
+                    </div>
+                    <div class="level-item">
+                        <a id="whatsapp-link" href="#" class="navbar-item has-text-white" style="font-size: 2.5rem !important;"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <div id="mainBanner">
+            <figure class="image">
+                <img src="./assets/Imagenes/2. Derechos de autor.png" alt="2. Derechos de autor.png" >
+            </figure>
+        </div>
+    </div>
+
+    <!-- Marcas -->
+    <section class="has-background-gray">
+        <div class="container" style="background: transparent;">
+            <div class="section" style="padding-bottom: 0 !important;">
+                <p class="has-text-dark is-italic is-size-7 has-text-centered">Legales</p>
+                <p class="has-text-primary is-italic has-text-weight-bold is-size-2 has-text-centered">Bienvenidos a Devek®</p>
+                <p class="has-text-dark is-italic has-text-weight-bold is-size-6 has-text-centered pb-4">Política de Derechos de Autor y Propiedad Intelectual</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container pt-6 pb-6">
+        <p class="has-text-dark is-size-7 is-italic">
+            <strong>Mexicano Imperial, S.A. de C.V.</strong> (en lo sucesivo <strong>DEVEK®</strong>), ha elaborado la presente política con la finalidad de hacer de su conocimiento los Derechos de Autor y la Propiedad Intelectual de los contenidos que se encuentran en nuestra página web <strong>www.devek.com.mx</strong>, por tal motivo le informamos lo siguiente:
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            <strong>Derechos de Autor:</strong> Todos los contenidos presentes en este sitio web, incluyendo, pero no limitado a textos, imágenes, videos, logotipos, gráficos y diseños, están protegidos por las leyes de derechos de autor mexicanas y son propiedad exclusiva de <strong>DEVEk</strong> o de terceros que han otorgado los derechos necesarios. Queda estrictamente prohibida la reproducción, distribución, modificación, transmisión, exhibición o uso no autorizado de cualquier material protegido por derechos de autor sin el consentimiento expreso por escrito de <strong>DEVEk</strong> o del titular de los derechos correspondientes.
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            <strong>Uso del Contenido:</strong> Queda prohibida su reproducción, distribución, modificación, exhibición o uso no autorizado sin el consentimiento expreso por escrito de DEVEK.
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            <strong>Uso del Diseño y la Estructura del Sitio Web:</strong> La estructura, el diseño y la apariencia visual de este sitio web son propiedad exclusiva de <strong>DEVEk</strong> y están protegidos por las leyes de derechos de autor y propiedad intelectual. Queda expresamente prohibido copiar, reproducir, modificar, distribuir o utilizar de cualquier otra forma el diseño o la estructura del sitio web en otros sitios web, materiales impresos u otros medios, ya sea con fines comerciales o no comerciales. Además, queda prohibido el uso de elementos del diseño o la estructura del sitio web de manera que pueda causar confusión de marca o inducir a error a los usuarios respecto a la asociación con DEVEK. Cualquier uso no autorizado de la estructura o el diseño del sitio web constituirá una violación de nuestros derechos de propiedad intelectual y será objeto de acciones legales.
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">        
+            <strong>Marcas Comerciales:</strong> Todas las marcas comerciales, nombres comerciales y logotipos utilizados en este sitio web son propiedad de <strong>DEVEk</strong> o de terceros y están protegidos por las leyes de marcas comerciales mexicanas. Queda prohibido el uso no autorizado de cualquier marca comercial o logotipo sin el consentimiento expreso por escrito de <strong>DEVEk</strong> o del titular de la marca correspondiente.
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            <strong>Contenido Generado por el Usuario:</strong> Si los usuarios contribuyen con contenido a través de nuestro sitio web, redes sociales, eventos en vivo, expos, comunicación telefónica, transmisiones u otros medios, como comentarios, reseñas, publicaciones en redes sociales, mensajes, imágenes, videos u otros materiales, otorgan a <strong>DEVEk</strong> una licencia perpetua, irrevocable, mundial y libre de regalías para utilizar, reproducir, modificar, adaptar, publicar, traducir, distribuir y mostrar dicho contenido en cualquier medio y formato, ya sea ahora conocido o desarrollado en el futuro. Esta licencia incluye, pero no se limita a, la promoción y el marketing de nuestros productos y servicios, así como la creación de contenido relacionado con nuestra marca.
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            <strong>Notificación de Infracción de Derechos de Autor:</strong> <strong>DEVEk</strong> respeta los derechos de propiedad intelectual de terceros y se compromete a responder a las notificaciones de presunta infracción de derechos de autor de conformidad con la Ley Federal del Derecho de Autor y otras leyes aplicables en México.
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            Para presentar una notificación de infracción de derechos de autor, envíe un aviso por escrito que incluya la siguiente información:
+        </p>
+        <ul>
+            <li class="has-text-dark is-size-7 is-italic pt-3 charlist">
+                Escrito donde se exponga la situación y los hechos que ameritan la notificación, deberá estar debidamente firmado autógrafamente o con firma electrónica del titular de los derechos de autor o de la persona
+                autorizada para actuar en nombre del titular de los derechos de autor.
+            </li>
+            <li class="has-text-dark is-size-7 is-italic pt-3 charlist">
+                Identificación del trabajo protegido por derechos de autor que se afirma ha sido infringido.
+            </li> 
+            <li class="has-text-dark is-size-7 is-italic pt-3 charlist">
+                Identificación del material que se afirma que está infringiendo o que es objeto de actividad infractora y que debe ser eliminado o cuyo acceso debe ser deshabilitado.
+            </li>
+            <li class="has-text-dark is-size-7 is-italic pt-3 charlist">
+                Registros, certificados o títulos de propiedad que demuestren fehacientemente la titularidad de lo que se afirma se está infringiendo.
+            </li>  
+            <li class="has-text-dark is-size-7 is-italic pt-3 charlist">
+                Información suficiente para permitir a <strong>DEVEk</strong> ponerse en contacto con el reclamante, como nombre, dirección, número de teléfono y dirección de correo electrónico.
+            </li>
+            <li class="has-text-dark is-size-7 is-italic pt-3 charlist">
+                Una declaración de que el reclamante cree de buena fe que el uso del material de la manera reclamada no está autorizado por el titular de los derechos de autor, su agente o la ley.
+            </li>
+            <li class="has-text-dark is-size-7 is-italic pt-3 charlist">
+                Una declaración de que la información en la notificación es precisa y, bajo pena de perjurio, que el reclamante está autorizado para actuar en nombre del titular de un derecho exclusivo que supuestamente se ha infringido.
+            </li>
+        </ul>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            Para cualquier pregunta o inquietud relacionada con los derechos de autor y la propiedad intelectual en México, por favor contáctenos a través de <a class="has-text-dark" href="mailto:aviso@devek.com.mx">aviso@devek.com.mx</a>
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-5">
+            <strong>Fecha de entrada en vigencia:</strong> 27 de febrero de 2024
+        </p>
+        <p class="has-text-dark is-size-7 is-italic pt-3">
+            <strong>Última actualización:</strong> 27 de febrero de 2024.
+        </p>
+        <p class="has-text-primary is-size-6 is-italic has-text-right has-text-weight-bold pt-5">
+            Devek, protege lo que te importa.
+        </p>
+        <p class="has-text-dark is-size-6 is-italic has-text-right has-text-weight-bold">
+            www.devek.com.mx
+        </p>
+    </div>
+
+    <!-- Cotizacion -->
+    <section class="hero has-background-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="has-text-white is-size-2 has-text-weight-bold has-text-centered is-italic">Devek®</h1>
+                <h1 class="has-text-white is-size-2 has-text-weight-bold has-text-centered is-italic">Protege lo que te importa.</h1>
+                <p class="has-text-white has-text-centered is-size-6 is-italic pt-5 pb-3">Protegemos y resguardamos tus productos a través de suministros de calidad y maquinaría durable y fácil de operar para eficientar tus procesos de empaque y embalaje.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="has-background-dark pb-4">
+        <div style="height: 40px; border-bottom: 1px solid white; display: block;"></div>
+        <div class="container pt-5">
+            <div class="columns is-variable is-8">
+                <div class="column is-one-third">
+                    <p class="has-text-white is-italic has-text-weight-bold is-size-7">DEVEK ®</p>
+                    <div id="catalogo" class="carousel pt-4 pb-4" data-flickity style="max-width: 220px;">
+                        <div class="carousel-cell">
+                            <figure class="image">
+                                <img src="./assets/Catalogo/catalogo-imagen_Devek.png" alt="catalogo-imagen_Devek.png">
+                            </figure>
+                        </div>
+                        <div class="carousel-cell">
+                            <figure class="image">
+                                <img src="./assets/Catalogo/catalogo-imagen_Devek.png" alt="catalogo-imagen_Devek.png">
+                            </figure>
+                        </div>
+                        <div class="carousel-cell">
+                            <figure class="image">
+                                <img src="./assets/Catalogo/catalogo-imagen_Devek.png" alt="catalogo-imagen_Devek.png">
+                            </figure>
+                        </div>
+                    </div>
+                    <p class="has-text-white is-italic has-text-weight-bold is-size-7">Descárgalo ></p>
+                </div>
+                <div class="column columns is-mobile is-two-thirds">
+                    <div class="column">
+                        <div class="block">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-7">NOSOTROS</p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Nuestra historia</a></p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Bolsa de trabajo</a></p>
+                        </div>
+                        <div class="block pt-4">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-7">SOPORTE AL CLIENTE</p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Servicio técnico</a></p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Facturación</a></p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Comentarios y sugerencias</a></p>
+                        </div>
+                    </div>
+                    <div style="border-left: solid 1px white; height: 50%; display: block; margin-top: 5%"></div>
+                    <div class="column">
+                        <div class="block">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-7">CLIENTES</p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">División Industria</a></p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">División Papelería</a></p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">División Ferretera</a></p>
+                        </div>
+                    </div>
+                    <div style="border-left: solid 1px white; height: 50%; display: block; margin-top: 5%"></div>
+                    <div class="column">
+                        <div class="block">
+                            <p class="has-text-white has-text-weight-bold is-italic is-size-7">OFERTA</p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Productos de Empaque</a></p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Maquinaria de Empaque</a></p>
+                            <p><a class="has-text-white is-italic footer-link is-size-7" href="#">Refacciones para maquinaria</a></p>
+                        </div>
+                        <div class="block">
+                            <div class="level is-mobile pt-6">
+                                <div class="level-left"></div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <div class="is-size-6 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 2.5rem; height: 2.5rem;">
+                                            <i class="fa-brands fa-linkedin-in" style="padding-top: 30%; padding-left: 33%;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="is-size-6 has-text-dark has-text-weight-bold has-background-white" style="border-radius: 50%; width: 2.5rem; height: 2.5rem;">
+                                            <i class="fa-brands fa-youtube" style="padding-top: 31%; padding-left: 27%;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container pt-3">
+        <div class="columns">
+            <div class="column">
+                <!-- <div class="level" style="height: 100%;">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="has-text-dark is-italic has-text-weight-bold is-size-7">PRÓXIMOS EVENTOS</p>
+                        </div>
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/Logo_ExpoPack-Mexico.png" style="width: 75px;" alt="Logo_ExpoPack-Mexico.png">
+                            </figure>
+                        </div>
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/Logo_ExpoPack-Guadalajara.png" style="width: 75px;" alt="Logo_ExpoPack-Guadalajara.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="column">
+                <div class="level is-mobile" style="height: 100%;">
+                    <div class="level-item">
+                        <p><a href="" class="has-text-dark is-italic has-text-weight-bold is-size-7">Aviso de privacidad</a></p>
+                    </div>
+                    <div class="level-item">
+                        <p><a href="" class="has-text-dark is-italic has-text-weight-bold is-size-7">Política de calidad</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="level is-mobile" style="height: 100%;">
+                    <div class="level-left"></div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/ISO-9001_Devek.png" style="width: 100px;" alt="ISO-9001_Devek.png">
+                            </figure>
+                        </div>
+                        <div class="level-item">
+                            <figure class="image">
+                                <img src="./assets/Logos/ISO-22000_Devek.png" style="width: 100px;" alt="ISO-22000_Devek.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="has-background-primary pt-1 pb-1">
+        <p class="has-text-white is-italic has-text-centered"><span class="has-text-weight-bold">© 2024 Devek</span> Todos los derechos reservados.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/18b1f3a72b.js" crossorigin="anonymous"></script>
+    <script src="./assets/flickity.pkgd.min.js"></script>
+    <script src="./assets/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/multiple-select@1.7.0/dist/multiple-select.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        const marcas = document.getElementById("marcas");
+        const marcasMobile = document.getElementById("marcasMobile");
+        const marcasMobile2 = document.getElementById("marcasMobile2");
+        const ubicaciones = document.getElementById("ubicaciones");
+        const ubicacionesMob = document.getElementById("ubicacionesMob");
+        const ubicacionesMob2 = document.getElementById("ubicacionesMob2");
+        const envios = document.getElementById("envios");
+        const enviosMex = document.getElementById("enviosMex");
+        const embalaje = document.getElementById("embalaje");
+        const tendencia = document.getElementById("tendencia");
+        const equipos = document.getElementById("equipos");
+
+        window.addEventListener("resize", resize);
+        width = window.innerWidth;
+        if (width <= 768) {
+            marcas.style.display = "none"
+            marcasMobile.style.display = ""
+            marcasMobile2.style.display = ""
+            ubicaciones.style.display = "none"
+            ubicacionesMob.style.display = ""
+            ubicacionesMob2.style.display = ""
+            envios.classList.remove("is-mobile")
+            enviosMex.classList.remove("is-two-fifths")
+            embalaje.setAttribute("data-flickity", "")
+            tendencia.classList.add("mb-3")
+            equipos.classList.add("mb-3")
+        } else {
+            marcas.style.display = ""
+            marcasMobile.style.display = "none"
+            marcasMobile2.style.display = "none"
+            ubicaciones.style.display = ""
+            ubicacionesMob.style.display = "none"
+            ubicacionesMob2.style.display = "none"
+            envios.classList.add("is-mobile")
+            enviosMex.classList.add("is-two-fifths")
+            embalaje.setAttribute("data-flickity", '{ "groupCells": 3 }')
+            tendencia.classList.remove("mb-3")
+            equipos.classList.remove("mb-3")
+        }
+
+        function resize() {
+            if (width <= 768) {
+                marcas.style.display = "none"
+                marcasMobile.style.display = ""
+                marcasMobile2.style.display = ""
+                ubicaciones.style.display = "none"
+                ubicacionesMob.style.display = ""
+                ubicacionesMob2.style.display = ""
+                envios.classList.remove("is-mobile")
+                enviosMex.classList.remove("is-two-fifths")
+                embalaje.setAttribute("data-flickity", "")
+                tendencia.classList.add("mb-3")
+                equipos.classList.add("mb-3")
+            } else {
+                marcas.style.display = ""
+                marcasMobile.style.display = "none"
+                marcasMobile2.style.display = "none"
+                ubicaciones.style.display = ""
+                ubicacionesMob.style.display = "none"
+                ubicacionesMob2.style.display = "none"
+                envios.classList.add("is-mobile")
+                enviosMex.classList.add("is-two-fifths")
+                embalaje.setAttribute("data-flickity", '{ "groupCells": 3 }')
+                tendencia.classList.remove("mb-3")
+                equipos.classList.remove("mb-3")
+            }
+        }
+    </script>
+    <script>
+        $(function () {
+            $('select').multipleSelect({
+                selectAll: false
+            });
+        })
+    </script>
+</body>
+</html>
