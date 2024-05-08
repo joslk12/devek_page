@@ -10,10 +10,15 @@ const telMob = document.getElementById("telMob");
 const mail = document.getElementById("mail");
 const mailMob = document.getElementById("mailMob");
 const cot = document.getElementById("cot");
+const catalogoForm = document.getElementById("catalogoForm");
+const catalogoThanks = document.getElementById("catalogoThanks");
 
 const topContact = document.getElementById('topContact');
 const navSec = document.getElementById("navSec");
 const navFixed = document.getElementById("navFixed");
+
+catalogoForm.style.display = 'block';
+catalogoThanks.style.display = 'none';
 
 // Equipos landing
 let equiposPages = 1;
@@ -576,4 +581,70 @@ async function previousPage() {
     } else {
         window.location.href = productoPages[productoPagesIndex - 1] + '.html';
     }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Functions to open and close a modal
+    function openModal($el) {
+      $el.classList.add('is-active');
+      catalogoForm.style.display = 'block';
+      catalogoThanks.style.display = 'none';
+    }
+  
+    function closeModal($el) {
+      $el.classList.remove('is-active');
+    }
+  
+    function closeAllModals() {
+      (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+        closeModal($modal);
+      });
+    }
+  
+    // Add a click event on buttons to open a specific modal
+    (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+  
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+  
+    // Add a click event on various child elements to close the parent modal
+    (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+      const $target = $close.closest('.modal');
+  
+      $close.addEventListener('click', () => {
+        closeModal($target);
+      });
+    });
+  
+    // Add a keyboard event to close all modals
+    document.addEventListener('keydown', (event) => {
+      if(event.key === "Escape") {
+        closeAllModals();
+      }
+    });
+  });
+
+function closeModal($el) {
+    $el.classList.remove('is-active');
+}
+
+function closeAllModals() {
+    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+      closeModal($modal);
+    });
+}
+
+function donwloadCatalogo() {
+    catalogoForm.style.display = 'none';
+    catalogoThanks.style.display = 'block';
+    downloadLink = document.createElement('a');
+    downloadLink.href = "/assets/Devek Catalogo Industrial.pdf";
+    downloadLink.setAttribute('download', '');
+    downloadLink.target = '_blank';
+    downloadLink.click();
+    // window.open("/assets/Devek Catalogo Industrial.pdf", '_blank');
 }

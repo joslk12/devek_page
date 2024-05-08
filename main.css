@@ -402,6 +402,24 @@
     color: #292a2d !important;
  }
 
+ #catalogoForm .input {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    box-shadow: none !important;
+    background-color: transparent;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    font-size: 12px;
+ }
+
+ #catalogoForm .input::placeholder {
+    color: white !important;
+ }
+
  .textarea  {
     border-top: none !important;
     border-left: none !important;
