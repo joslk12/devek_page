@@ -228,35 +228,35 @@ const MAQUINARIA = [
         codigo: 'YT5030',
         nombre: 'Túnel de Encogimiento YT5030',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
-        img: '1. Túnel de Encogimiento YT5030.png'
+        img: '1. Tunel de Encogimiento YT5030.png'
     },
     {
         clasificacion: 'tuneles',
         codigo: 'YT4525',
         nombre: 'Túnel de Encogimiento YT4525',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
-        img: '2. Túnel de Encogimiento YT4525.png'
+        img: '2. Tunel de Encogimiento YT4525.png'
     },
     {
         clasificacion: 'tuneles',
         codigo: 'YTM1230',
         nombre: 'Túnel de Manga YTM1230',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
-        img: '3. Túnel de Manga YTM1230.png'
+        img: '3. Tunel de Manga YTM1230.png'
     },
     {
         clasificacion: 'tuneles',
         codigo: 'YT6040',
         nombre: 'Túnel de Encogimiento YT6040',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
-        img: '4. Túnel de Encogimiento YT6040.png'
+        img: '4. Tunel de Encogimiento YT6040.png'
     },
     {
         clasificacion: 'tuneles',
         codigo: 'P6050',
         nombre: 'Túnel de Encogimiento P6050',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
-        img: '5. Túnel de Encogimiento P6050.png'
+        img: '5. Tunel de Encogimiento P6050.png'
     },
     {
         clasificacion: 'devekAir',
