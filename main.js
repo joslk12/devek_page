@@ -165,21 +165,21 @@ const MAQUINARIA = [
         codigo: '34C',
         nombre: 'Selladora Semiautomática 34C',
         cardDesc: 'Ayuda a proteger el producto contra la contaminación y agentes externos',
-        img: '2. Selladora Semiautomática 34C.png'
+        img: '2. Selladora Semiautomatica 34C.png'
     },
     {
         clasificacion: 'selladoras',
         codigo: 'SF6451-S',
         nombre: 'Selladora Automática SF6451-S',
         cardDesc: 'Optimiza el proceso de embalaje al ofrecer un sellado preciso y automatizado',
-        img: '3. Selladora Automática  SF6451-S.png'
+        img: '3. Selladora Automatica  SF6451-S.png'
     },
     {
         clasificacion: 'selladoras',
         codigo: 'YSL5045',
         nombre: 'Selladora Semiautomática YSL5045',
         cardDesc: 'Sellado en L en una variedad de productos envasados',
-        img: '4. Selladora Semiautomática YSL5045.png'
+        img: '4. Selladora Semiautomatica YSL5045.png'
     },
     {
         clasificacion: 'selladoras',
@@ -193,7 +193,7 @@ const MAQUINARIA = [
         codigo: 'YSL6045S',
         nombre: 'Selladora Semiautomática YSL6045S',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
-        img: '6. Selladora Semiautomática YSL6045S.png'
+        img: '6. Selladora Semiautomatica YSL6045S.png'
     },
     {
         clasificacion: 'selladoras',
@@ -214,7 +214,7 @@ const MAQUINARIA = [
         codigo: 'VF3500',
         nombre: 'Selladora Automática VF3500',
         cardDesc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.',
-        img: '9. Selladora Automática VF3500.png'
+        img: '9. Selladora Automatica VF3500.png'
     },
     {
         clasificacion: 'selladoras',
