@@ -260,36 +260,36 @@
             <h1 class="has-text-dark has-text-weight-bold is-size-3 is-italic">
                 Será un placer atenderte
             </h1>
-            <div class="form pt-5">
+            <form id="contacto" method="post" action="" class="form pt-5">
                 <div class="field">
                     <div class="control">
-                      <input class="input" type="text" placeholder="Nombre:">
+                      <input class="input" name="nombre" type="text" placeholder="Nombre:">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                      <input class="input" type="text" placeholder="Apellidos:">
+                      <input class="input" name="apellidos" type="text" placeholder="Apellidos:">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                      <input class="input" type="email" placeholder="Email:">
+                      <input class="input" name="email" type="email" placeholder="Email:">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                      <input class="input" type="phone" placeholder="Teléfono:">
+                      <input class="input" name="telefono" type="phone" placeholder="Teléfono:">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                      <input class="input" type="text" placeholder="Empresa:">
+                      <input class="input" name="empresa" type="text" placeholder="Empresa:">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
                       <div class="select is-dark">
-                        <select multiple="multiple" data-single="true" placeholder="Estado:">
+                        <select name="estado" multiple="multiple" data-single="true" placeholder="Estado:">
                                 <option value="AGS">Aguascalientes</option>
                                 <option value="BCN">Baja California</option>
                                 <option value="BCS">Baja California Sur</option>
@@ -329,7 +329,7 @@
                 <div class="field">
                     <div class="control">
                         <div class="select is-dark">
-                            <select multiple="multiple" data-single="true" placeholder="Me interesa recibir asistencia en:">
+                            <select name="interes" multiple="multiple" data-single="true" placeholder="Me interesa recibir asistencia en:">
                                 <option value="Adquirir refacciones">Adquirir refacciones</option>
                                 <option value="Servicio técnico">Servicio técnico</option>
                                 <option value="Póliza de mantenimiento">Póliza de mantenimiento</option>
@@ -340,13 +340,13 @@
                 <div class="field">
                     <div class="control">
                         <!-- <label class="label">Por favor, utilice las siguientes líneas para describir su necesidad/problema actual.</label> -->
-                        <textarea class="textarea" placeholder="Por favor, utilice el siguiente espacio para describir su necesidad/problema actual."></textarea>
+                        <textarea name="necesidad" class="textarea" placeholder="Por favor, utilice el siguiente espacio para describir su necesidad/problema actual."></textarea>
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
                       <label class="checkbox is-italic is-size-7">
-                        <input type="checkbox" />
+                        <input name="terminos" type="checkbox" />
                         Acepto <a class="has-text-primary" href="/cookies.html">Términos y condiciones</a> y
                         <a class="has-text-primary" href="#">Aviso de privacidad</a>
                       </label>
@@ -365,7 +365,7 @@
                       </button>
                     </div>
                   </div>
-            </div>
+            </form id="contacto" method="post" action="">
         </div>
     </section>
 
@@ -519,26 +519,26 @@
                     Descarga Nuestro Catálogo
                 </h1>
                 <div>
-                    <div class="form pt-5 pb-5">
+                    <form id="descargaCatalogo" method="post" action="" class="form pt-5 pb-5">
                         <div class="field">
                             <div class="control">
-                              <input class="input" type="email" placeholder="E-mail:">
+                              <input name="email" class="input" type="email" placeholder="E-mail:">
                             </div>
                         </div>
                         <div class="field">
                             <div class="control">
-                              <input class="input" type="phone" placeholder="WhatsApp:">
+                              <input name="whatsapp" class="input" type="phone" placeholder="WhatsApp:">
                             </div>
                         </div>
                         <div class="field">
                             <div class="control">
-                              <input class="input" type="text" placeholder="Nombre completo:">
+                              <input name="nombre" class="input" type="text" placeholder="Nombre completo:">
                             </div>
                         </div>
                         <div class="field">
                             <div class="control">
                               <label class="checkbox is-italic is-size-7 has-text-white">
-                                <input type="checkbox" />
+                                <input name="actualizaciones" type="checkbox" />
                                 Sí, me gustaría recibir actualizaciones periódicas de Devek®
                               </label>
                             </div>
@@ -546,7 +546,7 @@
                         <div class="field">
                             <div class="control">
                               <label class="checkbox is-italic is-size-7 has-text-white">
-                                <input type="checkbox" />
+                                <input name="terminos" type="checkbox" />
                                 Acepto <a class="has-text-dark" href="/cookies.html">Términos y condiciones</a> y
                                 <a class="has-text-dark" href="#">Aviso de privacidad</a>
                               </label>
@@ -565,7 +565,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div id="catalogoThanks" style="width: 80%; margin: auto;">

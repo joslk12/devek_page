@@ -1180,26 +1180,26 @@
                     Descarga Nuestro Catálogo
                 </h1>
                 <div>
-                    <div class="form pt-5 pb-5">
+                    <form id="descargaCatalogo" class="form pt-5 pb-5" method="post" action="">
                         <div class="field">
                             <div class="control">
-                              <input class="input" type="email" placeholder="E-mail:">
+                              <input name="email" class="input" type="email" placeholder="E-mail:">
                             </div>
                         </div>
                         <div class="field">
                             <div class="control">
-                              <input class="input" type="phone" placeholder="WhatsApp:">
+                              <input name="whatsapp" class="input" type="phone" placeholder="WhatsApp:">
                             </div>
                         </div>
                         <div class="field">
                             <div class="control">
-                              <input class="input" type="text" placeholder="Nombre completo:">
+                              <input name="nombre" class="input" type="text" placeholder="Nombre completo:">
                             </div>
                         </div>
                         <div class="field">
                             <div class="control">
                               <label class="checkbox is-italic is-size-7 has-text-white">
-                                <input type="checkbox" />
+                                <input name="actualizaciones" type="checkbox" />
                                 Sí, me gustaría recibir actualizaciones periódicas de Devek®
                               </label>
                             </div>
@@ -1207,7 +1207,7 @@
                         <div class="field">
                             <div class="control">
                               <label class="checkbox is-italic is-size-7 has-text-white">
-                                <input type="checkbox" />
+                                <input name="terminos" type="checkbox" />
                                 Acepto <a class="has-text-dark" href="/cookies.html">Términos y condiciones</a> y
                                 <a class="has-text-dark" href="#">Aviso de privacidad</a>
                               </label>
@@ -1226,7 +1226,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div id="catalogoThanks" style="width: 80%; margin: auto;">
