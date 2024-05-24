@@ -396,10 +396,19 @@
                 </p>
             </div>
             <div class="column ml-3">
-                <div class="block">
-                    <figure class="image">
-                        <img src="../../assets/MaquinariaEmpaque/Precintadoras/BL-220Z/7. Precintadora Monoformato BL-220Z - Sellado de Cajas.png" alt="7. Precintadora Monoformato BL-220Z - Sellado de Cajas.png">
-                    </figure>
+                <div id="mainBanner" class="carousel" data-flickity='{ "autoPlay": true }'>
+                    <div class="carousel-cell">
+                        <figure class="image">
+                            <img id="mainBannerImg" src="../../assets/MaquinariaEmpaque/Precintadoras/BL-220Z/7. Precintadora Monoformato BL-220Z - Sellado de Cajas.png" alt="7. Precintadora Monoformato BL-220Z - Sellado de Cajas.png">
+                        </figure>
+                    </div>
+                    <div class="carousel-cell">
+                        <figure class="image">
+                            <iframe id="mainBannerVid"
+                                src="https://www.youtube.com/embed/r7TOcSLnqGE">
+                            </iframe>           
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -876,6 +885,8 @@
         const displayInstalacion = document.getElementById("displayInstalacion");
         const hideInstalacion = document.getElementById("hideInstalacion");
         const instalacion = document.getElementById("instalacion");
+        const mainBannerImg = document.getElementById("mainBannerImg");
+        const mainBannerVid = document.getElementById("mainBannerVid");
         const imagenes = [
             '1. Precintadora Monoformato BL-220Z.png',
             '2. Precintadora Monoformato BL-220Z - Medidas.png',
@@ -890,6 +901,10 @@
 
         let size = expandImg.getBoundingClientRect();
         let height = size.height;
+        let bannerImgSize = mainBannerImg.getBoundingClientRect();
+        mainBannerVid.style.height = bannerImgSize.height;
+        mainBannerVid.style.width = bannerImgSize.width;
+        mainBannerVid.style = 'width: ' + bannerImgSize.width + 'px !important; height: ' + bannerImgSize.height + 'px !important; margin: auto; display: block;';
         // imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
         productDesc.style = 'height: ' + height + 'px !important; margin: auto; display: block; overflow-y: scroll; overflow-x: clip;';
 

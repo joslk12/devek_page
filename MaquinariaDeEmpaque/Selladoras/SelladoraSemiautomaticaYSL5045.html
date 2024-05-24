@@ -401,13 +401,19 @@
                 </p>
             </div>
             <div class="column ml-3">
-                <div class="block">
-                    <figure class="image">
-                        <iframe width="100%" height="350"
-                            src="https://www.youtube.com/embed/461cOHxPBf4">
-                        </iframe> 
-                        <!-- <img src="../../assets/MaquinariaEmpaque/Encartonadoras/E15/7. Encartonadora E15 - E35 - Cajas Armadas.png" alt="7. Encartonadora E15 - E35 - Cajas Armadas.png"> -->
-                    </figure>
+                <div id="mainBanner" class="carousel" data-flickity='{ "autoPlay": true }'>
+                    <div class="carousel-cell">
+                        <figure class="image">
+                            <img id="mainBannerImg" src="../../assets/MaquinariaEmpaque/Selladoras/YSL5045/9. Selladora Semiautomatica YSL5045.png" alt="9. Selladora Semiautomatica YSL5045.png">
+                        </figure>
+                    </div>
+                    <div class="carousel-cell">
+                        <figure class="image">
+                            <iframe id="mainBannerVid"
+                                src="https://www.youtube.com/embed/jVwem0WCvng">
+                            </iframe>           
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1008,6 +1014,8 @@
         const displayInstalacion = document.getElementById("displayInstalacion");
         const hideInstalacion = document.getElementById("hideInstalacion");
         const instalacion = document.getElementById("instalacion");
+        const mainBannerImg = document.getElementById("mainBannerImg");
+        const mainBannerVid = document.getElementById("mainBannerVid");
         const imagenes = [
             '1. Selladora Semiautomatica YSL5045.png',
             '2. Selladora Semiautomatica YSL5045 - Medidas.png',
@@ -1023,6 +1031,10 @@
 
         let size = expandImg.getBoundingClientRect();
         let height = size.height;
+        let bannerImgSize = mainBannerImg.getBoundingClientRect();
+        mainBannerVid.style.height = bannerImgSize.height;
+        mainBannerVid.style.width = bannerImgSize.width;
+        mainBannerVid.style = 'width: ' + bannerImgSize.width + 'px !important; height: ' + bannerImgSize.height + 'px !important; margin: auto; display: block;';
         // imageContainer.style = 'height: ' + height + 'px !important; margin: auto; display: flex';
         productDesc.style = 'height: ' + height + 'px !important; margin: auto; display: block; overflow-y: scroll; overflow-x: clip;';
 
