@@ -1,0 +1,44 @@
+[29-May-2024 20:33:30 America/Mexico_City] PHP Notice:  Undefined index: actualizaciones in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 176
+[29-May-2024 21:22:25 America/Mexico_City] PHP Notice:  Undefined index: estado in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 82
+[29-May-2024 21:22:25 America/Mexico_City] PHP Notice:  Undefined index: problema in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 102
+[29-May-2024 21:22:25 America/Mexico_City] PHP Notice:  Undefined index: interes in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 103
+[29-May-2024 21:22:25 America/Mexico_City] PHP Notice:  Undefined index: frecuencia in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 104
+[29-May-2024 21:22:25 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,,,'No capturado','No capturado','No capturado','No capturado','https://aneell' at line 4 in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php:70
+Stack trace:
+#0 /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php(70): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 /home/customer/www/aneell.sg-host.com/public_html/php/forms.php(109): addContacto(4, 'Marshall', 'Mathews', 'agb@stbarbara.c...', '552612135145', 'No capturado', 'No capturado', false, false, false, false, false, 'No capturado', 'No capturado', 'No capturado', 'No capturado', 'https://aneell....')
+#2 {main}
+  thrown in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php on line 70
+[29-May-2024 21:31:03 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,,,'No capturado','No capturado','No capturado','No capturado','https://aneell' at line 4 in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php:70
+Stack trace:
+#0 /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php(70): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 /home/customer/www/aneell.sg-host.com/public_html/php/forms.php(114): addContacto(5, 'Marshall', 'Mathews', 'agb@stbarbara.c...', '552612135145', 'No capturado', 'No capturado', false, false, false, false, false, 'No capturado', 'No capturado', 'No capturado', 'No capturado', 'https://aneell....')
+#2 {main}
+  thrown in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php on line 70
+[29-May-2024 21:36:13 America/Mexico_City] PHP Notice:  Trying to access array offset on value of type null in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 117
+[29-May-2024 21:43:37 America/Mexico_City] PHP Notice:  Trying to access array offset on value of type null in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 117
+[29-May-2024 21:45:08 America/Mexico_City] PHP Notice:  Trying to access array offset on value of type null in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 117
+[29-May-2024 21:48:34 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,,,'No capturado','No capturado','No capturado','No capturado','https://aneell' at line 4 in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php:70
+Stack trace:
+#0 /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php(70): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 /home/customer/www/aneell.sg-host.com/public_html/php/forms.php(114): addContacto(9, 'Marshall', 'Mathews', 'agb@stbarbara.c...', '552612135145', 'No capturado', 'No capturado', false, false, false, false, false, 'No capturado', 'No capturado', 'No capturado', 'No capturado', 'https://aneell....')
+#2 {main}
+  thrown in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php on line 70
+[29-May-2024 22:02:54 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,,,'No capturado','No capturado','No capturado','No capturado','https://aneell' at line 4 in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php:70
+Stack trace:
+#0 /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php(70): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 /home/customer/www/aneell.sg-host.com/public_html/php/forms.php(114): addContacto(10, 'Marshall', 'Mathews', 'agb@stbarbara.c...', '552612135145', 'No capturado', 'No capturado', false, false, false, false, false, 'No capturado', 'No capturado', 'No capturado', 'No capturado', 'https://aneell....')
+#2 {main}
+  thrown in /home/customer/www/aneell.sg-host.com/public_html/php/db/connection.php on line 70
+[29-May-2024 22:04:31 America/Mexico_City] PHP Notice:  Trying to access array offset on value of type null in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 117
+[29-May-2024 22:05:19 America/Mexico_City] PHP Notice:  Trying to access array offset on value of type null in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 117
+[29-May-2024 22:23:22 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined function tr() in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php:82
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 82
+[30-May-2024 00:05:10 America/Mexico_City] PHP Notice:  Undefined index: tipo in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 34
+[30-May-2024 00:12:55 America/Mexico_City] PHP Notice:  Undefined index: tipo in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 34
+[03-Jun-2024 22:27:28 America/Mexico_City] PHP Notice:  Undefined index: tipo in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 34
+[03-Jun-2024 22:27:52 America/Mexico_City] PHP Notice:  Undefined index: tipo in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 34
+[05-Jul-2024 16:55:15 America/Mexico_City] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 393
+[15-Jul-2024 19:10:45 America/Mexico_City] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/customer/www/aneell.sg-host.com/public_html/php/forms.php on line 393

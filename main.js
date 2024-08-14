@@ -5,17 +5,19 @@ let width = window.innerWidth;
 const mainNav = document.getElementById("mainNav");
 const respNav = document.getElementById("respNav");
 const grupo = document.getElementById("grupo");
-const tel = document.getElementById("tel");
-const telMob = document.getElementById("telMob");
-const mail = document.getElementById("mail");
-const mailMob = document.getElementById("mailMob");
-const cot = document.getElementById("cot");
+// const tel = document.getElementById("tel");
+// const telMob = document.getElementById("telMob");
+// const mail = document.getElementById("mail");
+// const mailMob = document.getElementById("mailMob");
+// const cot = document.getElementById("cot");
 const catalogoForm = document.getElementById("catalogoForm");
 const catalogoThanks = document.getElementById("catalogoThanks");
 
 const topContact = document.getElementById('topContact');
 const navSec = document.getElementById("navSec");
 const navFixed = document.getElementById("navFixed");
+const burger = document.getElementsByClassName("navbar-burger")[0];
+burger.innerHTML = '\n                        <span aria-hidden="true"></span>\n                        <span aria-hidden="true"></span>\n                        <span aria-hidden="true"></span>\n                        '
 
 catalogoForm.style.display = 'block';
 catalogoThanks.style.display = 'none';
@@ -48,6 +50,14 @@ const cardName4 = document.getElementById('cardName4');
 const cardDesc4 = document.getElementById('cardDesc4');
 const cardLink4 = document.getElementById('cardLink4');
 
+//nav elements
+const navProductosEmpaque = document.querySelectorAll("[id='navProductosEmpaque']");
+const navMaquinariaEmpaque = document.querySelectorAll("[id='navMaquinariaEmpaque']");
+const navPapeleraFerretera = document.querySelectorAll("[id='navPapeleraFerretera']");
+const navServicio = document.querySelectorAll("[id='navServicio']");
+const navEquipo = document.querySelectorAll("[id='navEquipo']");
+const navContacto = document.querySelectorAll("[id='navContacto']");
+
 const elementsPerPage = 4;
 
 const MAQUINARIA_PAGES = [
@@ -58,7 +68,7 @@ const MAQUINARIA_PAGES = [
     'tuneles',
     'flejadoras',
     'devekAir',
-    'accesorios'
+    'bandas'
 ];
 
 const PRODUCTOS_EMPAQUE_PAGES = [
@@ -66,13 +76,146 @@ const PRODUCTOS_EMPAQUE_PAGES = [
     'cintasEspecialidad',
     'peliculas',
     'flejes',
-    'poliburbuja'
+    'poliburbuja',
+    'despachadores'
 ]
 
 const PAPELERA_FERRETERA_PAGES = [
     'cintasAdhesivas',
     'articulosPapeleria',
-    'Flejes'
+    'despachadores'
+]
+
+const MAIN_PAGES = [
+    'productosDeEmpaque',
+    'maquinariaDeEmpaque',
+    'papeleraYFerretera',
+    'servicio'
+];
+
+const BANDAS = [
+    'BandaTransportadoraFlexibleExtendible50F1545',
+    'BandaTransportadoraDeRodillosLibres50B195'
+];
+
+const DEVEK_AIR = [
+    'DevekAir'
+];
+
+const ENCARTONADORAS = [
+    'EncartonadoraE9',
+    'EncartonadoraE15_E35'
+];
+
+const ENVOLVEDORAS = [
+    'EnvolvedoraDeTarimas2000',
+    'EnvolvedoraDeTarimas2000A'
+];
+
+const FLEJADORAS = [
+    'FlejadoraSemiautomaticaBasicaBA20',
+    'FlejadoraSemiautomaticaPlusPL20',
+    'FlejadoraAutomatica995'
+]
+
+const PRECINTADORAS = [
+    'PrecintadoraAutomaticaBL-220A',
+    'PrecintadoraMonoformatoDT-420A',
+    'PrecintadoraMultiformatoBL-220Z',
+    'PrecintadoraAutomaticaBL-220T'
+]
+
+const SELLADORAS = [
+    'SelladomoYSD5540',
+    'SelladoraSemiautomatica34C',
+    'SelladoraAutomaticaSF6451S',
+    'SelladoraSemiautomaticaYSL5045',
+    'SelladoraDePedalSP24',
+    'SelladoraSemiautomaticaYSL6045S',
+    'SelladoraDeCortinaYC6030',
+    'SelladoraDeCortinaSC8040',
+    'SelladoraDeCortinaAutomaticaVF3500',
+    'SelladoraDeCortinaSC8040A'
+]
+
+const TUNELES = [
+    'TunelDeEncogimientoYT5030',
+    'TunelDeEncogimientoYT4525',
+    'TunelDeMangasYTM1230',
+    'TunelDeEncogimientoYT6040',
+    'TunelDeEncogimientoP6050'
+]
+
+const ARTICULOS_PAPELERIA = [
+    'BarrasDeSilicon',
+    'ForroAutoadherible',
+    'ForroAdhesivo',
+    'NotasAdhesivasTransparentes',
+    'NotasAdhesivasColorAmarilloPastel',
+    'NotasAdhesivasColoresPastel',
+    'NotasAdhesivasColoresNeon',
+    'ReglasSuperFlexible',
+    'JuegoDeGeometria4Piezas',
+    'JuegoDeGeometria5Piezas',
+    'JuegoDeGeometriaFlexible',
+    'JuegoDeGeometriaSuperFlexible'
+]
+
+const CINTAS_ADHESIVAS = [
+    'CintaDeEmpaqueAcrilicaL1000',
+    'CintaCorteFacilAmbarL700_TransparenteL701',
+    'CintaDobleCapaPlastica',
+    'CintaDobleCapaPapel',
+    'MaskingTape',
+    'CintaParaDuctosD73',
+    'CintaDelimitadoraDevekmark',
+    'CintaAntiderrapanteDevekwalk'
+]
+
+const DESPACHADORES = [
+    'DespachadorEscritorio',
+    'DespachadorCintaGorila',
+    'EmpaqueUsoLigero',
+    'EmpaqueUsoRudo',
+    'PeliculaStrech',
+    'FlejeManual',
+    'EquipoFlejadoManual'
+]
+
+const CINTAS_EMPAQUE = [
+    'CintaDeEmpaqueAcrilicaL1000',
+    'CintaDeEmpaqueAcrilicaL2205',
+    'CintaDeEmpaqueEcologicaL4000',
+    'CintaDeEmpaqueHotMeltL810',
+    'CintaDeEmpaqueHotMeltL371'
+]
+
+const CINTAS_ESPECIALIDAD = [
+    'CintaCorteFacilAmbarL700_TransparenteL701',
+    'CintaDobleCapaPlastica',
+    'CintaDobleCapaPapel',
+    'MaskingTape',
+    'CintaParaDuctosD73',
+    'CintaDelimitadoraDevekmark',
+    'CintaAntiderrapanteDevekwalk',
+    'DevekCintaGorila',
+    'CintaDePapelEngomado'
+]
+
+const FLEJES = [
+    'FlejeDePolipropilenoPlus',
+    'FlejeDePolietilenoManual'
+]
+
+const PELICULAS = [
+    'PeliculaStrechDevek',
+    'PoliolefinaBrillaflex',
+    'PolietilenoDeBajaDensidadLDPE',
+    'PolietilenoDeAltaDensidadHDPE'
+]
+
+const POLIBURBUJA = [
+    'Poliburbuja'
 ]
 
 const MAQUINARIA = [
@@ -266,14 +409,14 @@ const MAQUINARIA = [
         img: '1. Devek Air.png'
     },
     {
-        clasificacion: 'accesorios',
+        clasificacion: 'bandas',
         codigo: '50F1545',
         nombre: 'Banda Transportadora Flexible Extendible 50F1545',
         cardDesc: 'Agiliza y simplifica el proceso de manejo de cargas',
         img: '1. Banda Transportadora Flexible Extendible 50F1545.png'
     },
     {
-        clasificacion: 'accesorios',
+        clasificacion: 'bandas',
         codigo: '50B195',
         nombre: 'Banda Transportadora de Rodillos Libres 50B195',
         cardDesc: 'Optimiza el manejo de los productos.',
@@ -332,7 +475,7 @@ const MAQUINARIA = [
 
 respNav.style.display = "none";
 navFixed.style.display = "none";
-navFixed.style.width = width + "px";
+// navFixed.style.width = width + "px";
 
 if (width >= 1024 && width < 1408) {
     mainNav.style.display = "none";
@@ -348,23 +491,27 @@ if (width < 992) {
     grupo.style.display = ""
 }
 
+// if (width <= 768) {
+//     tel.style.display = "none"
+//     telMob.style.display = ""
+//     mail.style.display = "none"
+//     mailMob.style.display = ""
+//     cot.style.display = "none"
+// } else {
+//     tel.style.display = ""
+//     telMob.style.display = "none"
+//     mail.style.display = ""
+//     mailMob.style.display = "none"
+//     cot.style.display = ""
+// }
+
 if (width <= 768) {
-    tel.style.display = "none"
-    telMob.style.display = ""
-    mail.style.display = "none"
-    mailMob.style.display = ""
-    cot.style.display = "none"
-} else {
-    tel.style.display = ""
-    telMob.style.display = "none"
-    mail.style.display = ""
-    mailMob.style.display = "none"
-    cot.style.display = ""
+    showMenu();
 }
 
 function resize() {
     let width = window.innerWidth;
-    navFixed.style.width = width + "px";
+    // navFixed.style.width = width + "px";
     if (width >= 1024 && width < 1408) {
         mainNav.style.display = "none";
         respNav.style.display = ""
@@ -379,18 +526,22 @@ function resize() {
         grupo.style.display = ""
     }
 
+    // if (width <= 768) {
+    //     tel.style.display = "none"
+    //     telMob.style.display = ""
+    //     mail.style.display = "none"
+    //     mailMob.style.display = ""
+    //     cot.style.display = "none"
+    // } else {
+    //     tel.style.display = ""
+    //     telMob.style.display = "none"
+    //     mail.style.display = ""
+    //     mailMob.style.display = "none"
+    //     cot.style.display = ""
+    // }
+
     if (width <= 768) {
-        tel.style.display = "none"
-        telMob.style.display = ""
-        mail.style.display = "none"
-        mailMob.style.display = ""
-        cot.style.display = "none"
-    } else {
-        tel.style.display = ""
-        telMob.style.display = "none"
-        mail.style.display = ""
-        mailMob.style.display = "none"
-        cot.style.display = ""
+        showMenu();
     }
 }
 
@@ -398,9 +549,14 @@ function showMenu() {
     if ( mainNav.style.display == "none" || mainNav.style.display == "")
     {
         mainNav.style.display = "block";
+        burger.classList.add('has-text-centered');
+        burger.classList.add('pt-2');
+        burger.innerHTML = '<iconify-icon class="has-text-white" icon="mingcute:close-fill"></iconify-icon>'
+
     } 
     else {
         mainNav.style.display = "none";
+        burger.innerHTML = '\n                        <span aria-hidden="true"></span>\n                        <span aria-hidden="true"></span>\n                        <span aria-hidden="true"></span>\n                        '
     }  
 }
 
@@ -538,6 +694,228 @@ async function setAssetFolder(folder) {
 async function setEquiposSize(size) {
     equiposSize = size;
 }
+if(window.location.href.includes('MaquinariaDeEmpaque') || window.location.pathname.includes('maquinariaDeEmpaque')){
+    for(let i=0; i<navMaquinariaEmpaque.length; i++) {
+        if(width > 768){
+            navMaquinariaEmpaque[i].style = 'text-decoration: underline; color: white; text-underline-offset: .5rem; text-decoration-thickness: 2px;';
+        } else {
+            navMaquinariaEmpaque[i].style = "border-bottom: 2px solid white;"
+        }
+    }
+}
+if(window.location.href.includes('ProductosDeEmpaque') || window.location.pathname.includes('productosDeEmpaque')){
+    for(let i=0; i<navProductosEmpaque.length; i++) {
+        if(width > 768){
+            navProductosEmpaque[i].style = 'text-decoration: underline; color: white; text-underline-offset: .5rem; text-decoration-thickness: 2px;';
+        } else {
+            navProductosEmpaque[i].style = "border-bottom: 2px solid white;"
+        }
+    }
+}
+if(window.location.href.includes('PapeleraYFerretera') || window.location.pathname.includes('papeleraYFerretera')){
+    for(let i=0; i<navPapeleraFerretera.length; i++) {
+        if(width > 768){
+            navPapeleraFerretera[i].style = 'text-decoration: underline; color: white; text-underline-offset: .5rem; text-decoration-thickness: 2px;';
+        } else {
+            navPapeleraFerretera[i].style = "border-bottom: 2px solid white;"
+        }
+    }
+}
+if(window.location.href.includes('servicio') || window.location.pathname.includes('servicio')){
+    for(let i=0; i<navServicio.length; i++) {
+        if(width > 768){
+            navServicio[i].style = 'text-decoration: underline; color: white; text-underline-offset: .5rem; text-decoration-thickness: 2px;';
+        } else {
+            navServicio[i].style = "border-bottom: 2px solid white;"
+        }
+    }
+}
+
+if(window.location.href.includes('contacto') || window.location.pathname.includes('contacto')){
+    for(let i=0; i<navContacto.length; i++) {
+        navContacto[i].style = 'text-decoration: underline; color: white; text-underline-offset: .5rem; text-decoration-thickness: 2px; border: 2px solid white; font-size: 1rem;';
+    }
+}
+
+if(navEquipo.length > 0)
+{
+    for(let i=0; i<navEquipo.length; i++) {
+        const baseUri = window.location.href;
+        const reference = navEquipo[i].attributes.href.nodeValue;
+        if((baseUri.includes('CintasAdhesivas') && reference.includes('cintasAdhesivas'))
+            || (baseUri.includes('cintasAdhesivas') && reference.includes('cintasAdhesivas'))
+            || (baseUri.includes('ArticulosDePapeleria') && reference.includes('articulosPapeleria'))
+            || (baseUri.includes('articulosPapeleria') && reference.includes('articulosPapeleria'))
+            || (baseUri.includes('Despachadores') && reference.includes('despachadores'))
+            || (baseUri.includes('despachadores') && reference.includes('despachadores'))
+            || (baseUri.includes('Precintadoras') && reference.includes('precintadoras'))
+            || (baseUri.includes('precintadoras') && reference.includes('precintadoras'))
+            || (baseUri.includes('Encartonadoras') && reference.includes('encartonadoras'))
+            || (baseUri.includes('encartonadoras') && reference.includes('encartonadoras'))
+            || (baseUri.includes('Envolvedoras') && reference.includes('envolvedoras'))
+            || (baseUri.includes('envolvedoras') && reference.includes('envolvedoras'))
+            || (baseUri.includes('Selladoras') && reference.includes('selladoras'))
+            || (baseUri.includes('selladoras') && reference.includes('selladoras'))
+            || (baseUri.includes('Tuneles') && reference.includes('tuneles'))
+            || (baseUri.includes('tuneles') && reference.includes('tuneles'))
+            || (baseUri.includes('Flejadoras') && reference.includes('flejadoras'))
+            || (baseUri.includes('flejadoras') && reference.includes('flejadoras'))
+            || (baseUri.includes('DevekAir') && reference.includes('devekAir'))
+            || (baseUri.includes('devekAir') && reference.includes('devekAir'))
+            || (baseUri.includes('Bandas') && reference.includes('bandas'))
+            || (baseUri.includes('bandas') && reference.includes('bandas'))
+            || (baseUri.includes('CintasEmpaque') && reference.includes('cintasEmpaque'))
+            || (baseUri.includes('cintasEmpaque') && reference.includes('cintasEmpaque'))
+            || (baseUri.includes('CintasEspecialidad') && reference.includes('cintasEspecialidad'))
+            || (baseUri.includes('cintasEspecialidad') && reference.includes('cintasEspecialidad'))
+            || (baseUri.includes('Peliculas') && reference.includes('peliculas'))
+            || (baseUri.includes('peliculas') && reference.includes('peliculas'))
+            || (baseUri.includes('Flejes') && reference.includes('flejes'))
+            || (baseUri.includes('flejes') && reference.includes('flejes'))
+            || (baseUri.includes('Poliburbuja') && reference.includes('poliburbuja'))
+            || (baseUri.includes('poliburbuja') && reference.includes('poliburbuja'))
+        ) {
+            navEquipo[i].style= "text-decoration: underline; text-decoration-thickness: 3px !important; text-underline-offset: 0.25rem; color: #00a041;"
+        }
+    }
+}
+
+const lowercaseFirst = str => `${str.charAt(0).toLowerCase()}${str.slice(1)}`;
+
+async function nextProd() {
+    let productoPages = [];
+    if(window.location.href.includes('CintasAdhesivas')){
+        productoPages = CINTAS_ADHESIVAS;
+    }
+    if(window.location.href.includes('ArticulosDePapeleria')){
+        productoPages = ARTICULOS_PAPELERIA;
+    }
+    if(window.location.href.includes('Despachadores')){
+        productoPages = DESPACHADORES;
+    }
+    if(window.location.href.includes('Precintadoras')){
+        productoPages = PRECINTADORAS;
+    }
+    if(window.location.href.includes('Encartonadoras')){
+        productoPages = ENCARTONADORAS;
+    }
+    if(window.location.href.includes('Envolvedoras')){
+        productoPages = ENVOLVEDORAS;
+    }
+    if(window.location.href.includes('Selladoras')){
+        productoPages = SELLADORAS;
+    }
+    if(window.location.href.includes('Tuneles')){
+        productoPages = TUNELES;
+    }
+    if(window.location.href.includes('Flejadoras')){
+        productoPages = FLEJADORAS;
+    }
+    if(window.location.href.includes('DevekAir')){
+        productoPages = DEVEK_AIR;
+    }
+    if(window.location.href.includes('Bandas')){
+        productoPages = BANDAS;
+    }
+    if(window.location.href.includes('CintasEmpaque')){
+        productoPages = CINTAS_EMPAQUE;
+    }
+    if(window.location.href.includes('CintasEspecialidad')){
+        productoPages = CINTAS_ESPECIALIDAD;
+    }
+    if(window.location.href.includes('Peliculas')){
+        productoPages = PELICULAS;
+    }
+    if(window.location.href.includes('Flejes')){
+        productoPages = FLEJES;
+    }
+    if(window.location.href.includes('Poliburbuja')){
+        productoPages = POLIBURBUJA;
+    }
+    const productoIndex = window.location.href.lastIndexOf('/');
+    const htmlIndex = window.location.href.indexOf('.html');
+    const pagina = window.location.href.substring(productoIndex + 1, htmlIndex);
+    const productoPagesIndex = productoPages.indexOf(pagina);
+    if (productoPagesIndex == productoPages.length - 1) {
+        const mainPageComplete = window.location.href.substring(0, productoIndex)
+        const mainPageName = mainPageComplete.substring(mainPageComplete.lastIndexOf('/') +1 , mainPageComplete.length)
+        if(mainPageName == 'ArticulosDePapeleria') {
+            window.location.href = mainPageComplete.replace(mainPageName, 'articulosPapeleria') + '.html';
+        } else {
+            window.location.href = mainPageComplete.replace(mainPageName, lowercaseFirst(mainPageName)) + '.html';
+        }
+    } else {
+        window.location.href = productoPages[productoPagesIndex + 1] + '.html';
+    }
+}
+
+async function previousProd() {
+    let productoPages = [];
+    if(window.location.href.includes('CintasAdhesivas')){
+        productoPages = CINTAS_ADHESIVAS;
+    }
+    if(window.location.href.includes('ArticulosDePapeleria')){
+        productoPages = ARTICULOS_PAPELERIA;
+    }
+    if(window.location.href.includes('Despachadores')){
+        productoPages = DESPACHADORES;
+    }
+    if(window.location.href.includes('Precintadoras')){
+        productoPages = PRECINTADORAS;
+    }
+    if(window.location.href.includes('Encartonadoras')){
+        productoPages = ENCARTONADORAS;
+    }
+    if(window.location.href.includes('Envolvedoras')){
+        productoPages = ENVOLVEDORAS;
+    }
+    if(window.location.href.includes('Selladoras')){
+        productoPages = SELLADORAS;
+    }
+    if(window.location.href.includes('Tuneles')){
+        productoPages = TUNELES;
+    }
+    if(window.location.href.includes('Flejadoras')){
+        productoPages = FLEJADORAS;
+    }
+    if(window.location.href.includes('DevekAir')){
+        productoPages = DEVEK_AIR;
+    }
+    if(window.location.href.includes('Bandas')){
+        productoPages = BANDAS;
+    }
+    if(window.location.href.includes('CintasEmpaque')){
+        productoPages = CINTAS_EMPAQUE;
+    }
+    if(window.location.href.includes('CintasEspecialidad')){
+        productoPages = CINTAS_ESPECIALIDAD;
+    }
+    if(window.location.href.includes('Peliculas')){
+        productoPages = PELICULAS;
+    }
+    if(window.location.href.includes('Flejes')){
+        productoPages = FLEJES;
+    }
+    if(window.location.href.includes('Poliburbuja')){
+        productoPages = POLIBURBUJA;
+    }
+    const productoIndex = window.location.href.lastIndexOf('/');
+    const htmlIndex = window.location.href.indexOf('.html');
+    const pagina = window.location.href.substring(productoIndex + 1, htmlIndex);
+    const productoPagesIndex = productoPages.indexOf(pagina);
+    if (productoPagesIndex == 0) {
+        const mainPageComplete = window.location.href.substring(0, productoIndex)
+        const mainPageName = mainPageComplete.substring(mainPageComplete.lastIndexOf('/') +1 , mainPageComplete.length)
+        if(mainPageName == 'ArticulosDePapeleria') {
+            window.location.href = mainPageComplete.replace(mainPageName, 'articulosPapeleria') + '.html';
+        } else {
+            window.location.href = mainPageComplete.replace(mainPageName, lowercaseFirst(mainPageName)) + '.html';
+        }
+        // window.location.href = productoPages[productoPages.length - 1] + '.html';
+    } else {
+        window.location.href = productoPages[productoPagesIndex - 1] + '.html';
+    }
+}
 
 async function nextPage() {
     let productoPages = [];
@@ -580,6 +958,30 @@ async function previousPage() {
         window.location.href = productoPages[productoPages.length - 1] + '.html';
     } else {
         window.location.href = productoPages[productoPagesIndex - 1] + '.html';
+    }
+}
+
+async function nextMainPage() {
+    const productoIndex = window.location.href.lastIndexOf('/');
+    const htmlIndex = window.location.href.indexOf('.html');
+    const pagina = window.location.href.substring(productoIndex + 1, htmlIndex);
+    const productoPagesIndex = MAIN_PAGES.indexOf(pagina);
+    if (productoPagesIndex == MAIN_PAGES.length - 1) {
+        window.location.href = MAIN_PAGES[0] + '.html';
+    } else {
+        window.location.href = MAIN_PAGES[productoPagesIndex + 1] + '.html';
+    }
+}
+  
+async function previousMainPage() {
+    const productoIndex = window.location.href.lastIndexOf('/');
+    const htmlIndex = window.location.href.indexOf('.html');
+    const pagina = window.location.href.substring(productoIndex + 1, htmlIndex);
+    const productoPagesIndex = MAIN_PAGES.indexOf(pagina);
+    if (productoPagesIndex == 0) {
+        window.location.href = MAIN_PAGES[MAIN_PAGES.length - 1] + '.html';
+    } else {
+        window.location.href = MAIN_PAGES[productoPagesIndex - 1] + '.html';
     }
 }
 

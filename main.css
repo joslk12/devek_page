@@ -319,7 +319,7 @@
 #embalaje .carousel-cell {
     width: 25%;
     margin-right: 20px;
-    max-height: 315px;
+    max-height: 400px;
   }
 
 #embalaje .flickity-prev-next-button.next {
@@ -469,16 +469,40 @@
     margin-bottom: 0 !important;
 }
 
-.division-subtitle {
-    /* height: 40px; */
+/* .division-subtitle {
+    height: 40px;
 }
 
 .division-content {
-    /* height: 125px; */
+    height: 125px;
+} */
+
+.error {
+    color: red !important;
+    font-style: italic;
+    font-size: small;
+}
+
+label .error {
+    color: red !important;
+    font-style: italic;
+    font-size: small;
 }
 
 .thanks {
     background-image: url('./assets/Imagenes/imagen-thank-you-page_devek_web.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thanks-buzon {
+    background-image: url('./assets/Imagenes/buzon_gracias_imagen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thanks-bolsa {
+    background-image: url('./assets/Imagenes/Imagen Recibimos tu solicitud_devek_web_bolsa_de_trabajo.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -549,6 +573,23 @@
     margin: auto;
 }
 
+#telMob {
+    display: none !important;
+}
+
+#mailMob {
+    display: none !important;
+}
+
+#topContactMob {
+    display: none !important;
+}
+
+#navFixed {
+    width: 100% !important;
+}
+
+
 @media screen and (max-width: 768px) {
     #equipoCar .flickity-page-dots {
         padding-left: 0;
@@ -577,10 +618,147 @@
     #equiposHead {
         margin-top: 0.5rem !important;
     }
-}
 
-@media  screen and (max-width: 991px) {
+    #navFixed {
+        width: 100% !important;
+    }
+    #navFixed .level-left {
+        width: 30% !important;
+    }
+    #navFixed .level-right {
+        width: 70% !important;
+    }
+    #mobile-space {
+        margin-top: 15px !important;
+        width: 100%;
+    }
+
+    #equipoMenu .carousel-cell {
+        width: 50%;
+        margin-right: 10px;
+    }
+    
+    #equipoMenu .carousel-cell:hover p{
+        text-decoration: underline;
+        text-decoration-thickness: 3px !important;
+        text-underline-offset: 0.25rem;
+        color:  #00a041;
+    }
+    
+    #equipoMenu .image {
+        max-width: 175px;
+        margin: auto;
+    }
+    
+    #equipoMenu .flickity-page-dots {
+        display: none;
+    }
+    
+    #equipoMenu .flickity-button {
+        background: white !important;
+    }
+    
+    #equipoMenu .flickity-button:disabled {
+        background: white !important;
+        opacity: unset !important;
+    }
+
+    .item-arrows {
+        display: inline-flex;
+    }
+
+    .mobile-preview {
+        margin: auto;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    #tunelesCarousel .image {
+        max-width: 185px;
+        margin: auto;
+    }
+    
+    #tunelesCarousel .carousel-cell {
+        width: 50%;
+        margin-right: 10px;
+        height: auto;
+    }
+    
+    #tunelesCarousel .flickity-page-dots {
+        display: none;
+    }
+
+    #telMob {
+        display: block !important;
+    }
+    
+    #mailMob {
+        display: block !important;
+    }
+
+    #tel {
+        display: none !important;
+    }
+    
+    #mail {
+        display: none !important;
+    }
+
+    #cot {
+        display: none !important;
+    }
+
     .navbar-brand {
         width: 100%;
+    }
+    #mainNav {
+        width: 100%;
+        box-shadow: none;
+    }
+    /* #topContact {
+        display: none !important;
+    } */
+    .navbar-item:hover {
+        background-color: transparent !important;
+        border: none;
+        color: white !important;
+        text-decoration: none;
+    }
+}
+
+@media  screen and (min-width: 769px) and (max-width: 991px) {
+    .navbar-brand {
+        width: 100%;
+    }
+
+    #telMob {
+        display: block !important;
+    }
+    
+    #mailMob {
+        display: block !important;
+    }
+    
+    #tel {
+        display: none !important;
+    }
+    
+    #mail {
+        display: none !important;
+    }
+
+    #cot {
+        display: none !important;
+    }
+
+    #navFixed {
+        width: 100% !important;
+    }
+
+    #mainNav {
+        width: 100%;
+        box-shadow: none;
     }
 }
