@@ -589,6 +589,21 @@ label .error {
     width: 100% !important;
 }
 
+.tab-content div.content {
+    display: none !important;
+}
+
+.tab-content div.content.is-active {
+    display: block !important;
+}
+
+.tabs li.is-active a {
+    border-bottom-width: medium !important;
+}
+
+.tabs li a {
+    border-bottom-width: medium !important;
+}
 
 @media screen and (max-width: 768px) {
     #equipoCar .flickity-page-dots {
